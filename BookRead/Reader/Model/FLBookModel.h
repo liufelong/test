@@ -22,10 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *authorname;
 /*!封面*/
 @property (copy, nonatomic) NSString *coverimg;
-/*!前言*/
-@property (copy, nonatomic) NSString *preface;
+/*!banner图片*/
+@property (copy, nonatomic) NSString *bannerimg;
+/*!介绍*/
+@property (copy, nonatomic) NSString *introduction;
 /*!推荐人数*/
-@property (copy, nonatomic) NSString *adviceCount;
+@property (copy, nonatomic) NSString *advicecount;
 
 @property (copy, nonatomic) NSString *chapterUrl;
 /*!章节列表*/

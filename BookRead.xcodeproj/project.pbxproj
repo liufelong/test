@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3ACEB045BC2EBC2DED492938 /* Pods_BookReadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121E217AB2F0199D0B0B71CF /* Pods_BookReadTests.framework */; };
 		E1E691D8250DA84C8501C287 /* Pods_BookRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4474E9BFFFBDBB4807CE3047 /* Pods_BookRead.framework */; };
+		F70C70D729DE960D007D1717 /* storeup.json in Resources */ = {isa = PBXBuildFile; fileRef = F70C70D629DE960D007D1717 /* storeup.json */; };
+		F70C70D929DE97BE007D1717 /* storedown.json in Resources */ = {isa = PBXBuildFile; fileRef = F70C70D829DE97BE007D1717 /* storedown.json */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -81,6 +83,8 @@
 		B1AF04A43021398963FE88DE /* Pods-BookRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead.debug.xcconfig"; path = "Target Support Files/Pods-BookRead/Pods-BookRead.debug.xcconfig"; sourceTree = "<group>"; };
 		C182E00446FEB196A0DBAF48 /* Pods-BookRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead.release.xcconfig"; path = "Target Support Files/Pods-BookRead/Pods-BookRead.release.xcconfig"; sourceTree = "<group>"; };
 		E0150C2295EA1A191504CBEC /* Pods-BookReadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReadTests.debug.xcconfig"; path = "Target Support Files/Pods-BookReadTests/Pods-BookReadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F70C70D629DE960D007D1717 /* storeup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storeup.json; sourceTree = "<group>"; };
+		F70C70D829DE97BE007D1717 /* storedown.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storedown.json; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -493,6 +497,8 @@
 		F7DDC23E29DC00E70059581F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				F70C70D829DE97BE007D1717 /* storedown.json */,
+				F70C70D629DE960D007D1717 /* storeup.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -610,10 +616,12 @@
 				F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */,
 				F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */,
 				F7B9058028ACC020003EB981 /* FLBookCollectionCell.xib in Resources */,
+				F70C70D729DE960D007D1717 /* storeup.json in Resources */,
 				F7B9051F28AB82B4003EB981 /* Assets.xcassets in Resources */,
 				F7B905A928B6235F003EB981 /* 小说.txt in Resources */,
 				F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */,
 				F78C7E8328BDEE730045C9B0 /* FLChaperListController.xib in Resources */,
+				F70C70D929DE97BE007D1717 /* storedown.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
