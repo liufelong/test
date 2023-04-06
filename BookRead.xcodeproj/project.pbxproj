@@ -1,0 +1,1091 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ACEB045BC2EBC2DED492938 /* Pods_BookReadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121E217AB2F0199D0B0B71CF /* Pods_BookReadTests.framework */; };
+		E1E691D8250DA84C8501C287 /* Pods_BookRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4474E9BFFFBDBB4807CE3047 /* Pods_BookRead.framework */; };
+		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
+		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
+		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
+		F723039D29D970DB00F304BF /* FLBookTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039B29D970DB00F304BF /* FLBookTableCell.xib */; };
+		F72303A029D97DD100F304BF /* FLBookTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039F29D97DD100F304BF /* FLBookTapView.m */; };
+		F73D470729D960B900E20CC1 /* FLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F73D470629D960B900E20CC1 /* FLBannerView.m */; };
+		F747CFCC29C843A100CF46D0 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFCB29C843A100CF46D0 /* HomeController.m */; };
+		F747CFD229C8468400CF46D0 /* PagingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFCE29C8468400CF46D0 /* PagingEngine.m */; };
+		F747CFD329C8468400CF46D0 /* PagingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFCF29C8468400CF46D0 /* PagingTextView.m */; };
+		F747CFD629C846B700CF46D0 /* FLReadControllerT.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFD529C846B700CF46D0 /* FLReadControllerT.m */; };
+		F747CFD929C84C3B00CF46D0 /* FLReadDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFD829C84C3B00CF46D0 /* FLReadDetailController.m */; };
+		F78C7E7C28BDDBE90045C9B0 /* FLAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E7B28BDDBE90045C9B0 /* FLAlertTool.m */; };
+		F78C7E8228BDEE730045C9B0 /* FLChaperListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8028BDEE730045C9B0 /* FLChaperListController.m */; };
+		F78C7E8328BDEE730045C9B0 /* FLChaperListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78C7E8128BDEE730045C9B0 /* FLChaperListController.xib */; };
+		F78C7E8728BDFD3F0045C9B0 /* FLChapterListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8528BDFD3F0045C9B0 /* FLChapterListCell.m */; };
+		F78C7E8828BDFD3F0045C9B0 /* FLChapterListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78C7E8628BDFD3F0045C9B0 /* FLChapterListCell.xib */; };
+		F78C7E8C28BF3D880045C9B0 /* FCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8B28BF3D870045C9B0 /* FCFileManager.m */; };
+		F78C7E8F28C0AF380045C9B0 /* FLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8E28C0AF380045C9B0 /* FLUser.m */; };
+		F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9051328AB82B2003EB981 /* AppDelegate.m */; };
+		F7B9051F28AB82B4003EB981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B9051E28AB82B4003EB981 /* Assets.xcassets */; };
+		F7B9052528AB82B4003EB981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9052428AB82B4003EB981 /* main.m */; };
+		F7B9052F28AB82B4003EB981 /* BookReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9052E28AB82B4003EB981 /* BookReadTests.m */; };
+		F7B9053A28AB82B4003EB981 /* BookReadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9053928AB82B4003EB981 /* BookReadUITests.m */; };
+		F7B9054B28AB96A2003EB981 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9054A28AB96A2003EB981 /* BaseViewController.m */; };
+		F7B9055828AB9B89003EB981 /* UIImage+Extenion.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9055728AB9B89003EB981 /* UIImage+Extenion.m */; };
+		F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9055A28AC7374003EB981 /* FLTabBarController.m */; };
+		F7B9056128AC778B003EB981 /* FLBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9056028AC778B003EB981 /* FLBookModel.m */; };
+		F7B9056528AC7A44003EB981 /* FLChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9056428AC7A44003EB981 /* FLChapterModel.m */; };
+		F7B9056828AC7AC9003EB981 /* FLBookShelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9056728AC7AC9003EB981 /* FLBookShelfController.m */; };
+		F7B9056E28AC7B09003EB981 /* FLMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9056D28AC7B09003EB981 /* FLMineController.m */; };
+		F7B9057228AC9215003EB981 /* FLReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9057128AC9215003EB981 /* FLReaderController.m */; };
+		F7B9057F28ACC020003EB981 /* FLBookCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9057D28ACC020003EB981 /* FLBookCollectionCell.m */; };
+		F7B9058028ACC020003EB981 /* FLBookCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B9057E28ACC020003EB981 /* FLBookCollectionCell.xib */; };
+		F7B9058628ACD484003EB981 /* FLReaderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9058528ACD484003EB981 /* FLReaderTool.m */; };
+		F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B9059328ADD424003EB981 /* LaunchScreen.storyboard */; };
+		F7B905A728B38131003EB981 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B905A528B38131003EB981 /* RequestTool.m */; };
+		F7B905A928B6235F003EB981 /* 小说.txt in Resources */ = {isa = PBXBuildFile; fileRef = F7B905A828B6235E003EB981 /* 小说.txt */; };
+		F7B905AF28B75CE1003EB981 /* FLBookStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */; };
+		F7B905B028B75CE1003EB981 /* FLBookStoreController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */; };
+		F7B905B228B76455003EB981 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B905B128B76449003EB981 /* libxml2.2.tbd */; };
+		F7D17BEC28F29922006519DE /* FLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D17BEB28F29922006519DE /* FLMenuView.m */; };
+		F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D17BED28F3AF77006519DE /* FLMenuView.xib */; };
+		FD226D3CEC634F652667E599 /* Pods_BookRead_BookReadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED45B9A9070BC25002342E /* Pods_BookRead_BookReadUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7B9052B28AB82B4003EB981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B9050728AB82B2003EB981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B9050E28AB82B2003EB981;
+			remoteInfo = BookRead;
+		};
+		F7B9053628AB82B4003EB981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B9050728AB82B2003EB981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B9050E28AB82B2003EB981;
+			remoteInfo = BookRead;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020FEED0DE2A4EC158FCE39A /* Pods-BookReadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReadTests.release.xcconfig"; path = "Target Support Files/Pods-BookReadTests/Pods-BookReadTests.release.xcconfig"; sourceTree = "<group>"; };
+		121E217AB2F0199D0B0B71CF /* Pods_BookReadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookReadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27210FEC27028D042B662903 /* Pods-BookRead-BookReadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead-BookReadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookRead-BookReadUITests/Pods-BookRead-BookReadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4474E9BFFFBDBB4807CE3047 /* Pods_BookRead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462A63427E07713792664454 /* Pods-BookRead-BookReadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead-BookReadUITests.release.xcconfig"; path = "Target Support Files/Pods-BookRead-BookReadUITests/Pods-BookRead-BookReadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AFED45B9A9070BC25002342E /* Pods_BookRead_BookReadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookRead_BookReadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1AF04A43021398963FE88DE /* Pods-BookRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead.debug.xcconfig"; path = "Target Support Files/Pods-BookRead/Pods-BookRead.debug.xcconfig"; sourceTree = "<group>"; };
+		C182E00446FEB196A0DBAF48 /* Pods-BookRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookRead.release.xcconfig"; path = "Target Support Files/Pods-BookRead/Pods-BookRead.release.xcconfig"; sourceTree = "<group>"; };
+		E0150C2295EA1A191504CBEC /* Pods-BookReadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReadTests.debug.xcconfig"; path = "Target Support Files/Pods-BookReadTests/Pods-BookReadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
+		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
+		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
+		F723039929D970DB00F304BF /* FLBookTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookTableCell.h; sourceTree = "<group>"; };
+		F723039A29D970DB00F304BF /* FLBookTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookTableCell.m; sourceTree = "<group>"; };
+		F723039B29D970DB00F304BF /* FLBookTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookTableCell.xib; sourceTree = "<group>"; };
+		F723039E29D97DD100F304BF /* FLBookTapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookTapView.h; sourceTree = "<group>"; };
+		F723039F29D97DD100F304BF /* FLBookTapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookTapView.m; sourceTree = "<group>"; };
+		F73D470529D960B900E20CC1 /* FLBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBannerView.h; sourceTree = "<group>"; };
+		F73D470629D960B900E20CC1 /* FLBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBannerView.m; sourceTree = "<group>"; };
+		F747CFCA29C843A100CF46D0 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		F747CFCB29C843A100CF46D0 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		F747CFCE29C8468400CF46D0 /* PagingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingEngine.m; sourceTree = "<group>"; };
+		F747CFCF29C8468400CF46D0 /* PagingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingTextView.m; sourceTree = "<group>"; };
+		F747CFD029C8468400CF46D0 /* PagingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingEngine.h; sourceTree = "<group>"; };
+		F747CFD129C8468400CF46D0 /* PagingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingTextView.h; sourceTree = "<group>"; };
+		F747CFD429C846B700CF46D0 /* FLReadControllerT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReadControllerT.h; sourceTree = "<group>"; };
+		F747CFD529C846B700CF46D0 /* FLReadControllerT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadControllerT.m; sourceTree = "<group>"; };
+		F747CFD729C84C3B00CF46D0 /* FLReadDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReadDetailController.h; sourceTree = "<group>"; };
+		F747CFD829C84C3B00CF46D0 /* FLReadDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadDetailController.m; sourceTree = "<group>"; };
+		F78C7E7A28BDDBE90045C9B0 /* FLAlertTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAlertTool.h; sourceTree = "<group>"; };
+		F78C7E7B28BDDBE90045C9B0 /* FLAlertTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAlertTool.m; sourceTree = "<group>"; };
+		F78C7E7F28BDEE730045C9B0 /* FLChaperListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLChaperListController.h; sourceTree = "<group>"; };
+		F78C7E8028BDEE730045C9B0 /* FLChaperListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLChaperListController.m; sourceTree = "<group>"; };
+		F78C7E8128BDEE730045C9B0 /* FLChaperListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLChaperListController.xib; sourceTree = "<group>"; };
+		F78C7E8428BDFD3F0045C9B0 /* FLChapterListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLChapterListCell.h; sourceTree = "<group>"; };
+		F78C7E8528BDFD3F0045C9B0 /* FLChapterListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLChapterListCell.m; sourceTree = "<group>"; };
+		F78C7E8628BDFD3F0045C9B0 /* FLChapterListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLChapterListCell.xib; sourceTree = "<group>"; };
+		F78C7E8A28BF3D870045C9B0 /* FCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFileManager.h; sourceTree = "<group>"; };
+		F78C7E8B28BF3D870045C9B0 /* FCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCFileManager.m; sourceTree = "<group>"; };
+		F78C7E8D28C0AF380045C9B0 /* FLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLUser.h; sourceTree = "<group>"; };
+		F78C7E8E28C0AF380045C9B0 /* FLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLUser.m; sourceTree = "<group>"; };
+		F78C7E9028C1D55C0045C9B0 /* NotificationNameDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationNameDefine.h; sourceTree = "<group>"; };
+		F7B9050F28AB82B2003EB981 /* BookRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9051228AB82B2003EB981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7B9051328AB82B2003EB981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7B9051E28AB82B4003EB981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B9052328AB82B4003EB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B9052428AB82B4003EB981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7B9052A28AB82B4003EB981 /* BookReadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9052E28AB82B4003EB981 /* BookReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReadTests.m; sourceTree = "<group>"; };
+		F7B9053028AB82B4003EB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B9053528AB82B4003EB981 /* BookReadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B9053928AB82B4003EB981 /* BookReadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReadUITests.m; sourceTree = "<group>"; };
+		F7B9053B28AB82B4003EB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B9054928AB96A2003EB981 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F7B9054A28AB96A2003EB981 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F7B9054E28AB98AE003EB981 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F7B9054F28AB999B003EB981 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
+		F7B9055028AB9A21003EB981 /* ColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacros.h; sourceTree = "<group>"; };
+		F7B9055628AB9B89003EB981 /* UIImage+Extenion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extenion.h"; sourceTree = "<group>"; };
+		F7B9055728AB9B89003EB981 /* UIImage+Extenion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extenion.m"; sourceTree = "<group>"; };
+		F7B9055928AC7374003EB981 /* FLTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTabBarController.h; sourceTree = "<group>"; };
+		F7B9055A28AC7374003EB981 /* FLTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLTabBarController.m; sourceTree = "<group>"; };
+		F7B9055F28AC778B003EB981 /* FLBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookModel.h; sourceTree = "<group>"; };
+		F7B9056028AC778B003EB981 /* FLBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookModel.m; sourceTree = "<group>"; };
+		F7B9056328AC7A44003EB981 /* FLChapterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLChapterModel.h; sourceTree = "<group>"; };
+		F7B9056428AC7A44003EB981 /* FLChapterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLChapterModel.m; sourceTree = "<group>"; };
+		F7B9056628AC7AC9003EB981 /* FLBookShelfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookShelfController.h; sourceTree = "<group>"; };
+		F7B9056728AC7AC9003EB981 /* FLBookShelfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookShelfController.m; sourceTree = "<group>"; };
+		F7B9056C28AC7B09003EB981 /* FLMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMineController.h; sourceTree = "<group>"; };
+		F7B9056D28AC7B09003EB981 /* FLMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMineController.m; sourceTree = "<group>"; };
+		F7B9057028AC9215003EB981 /* FLReaderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReaderController.h; sourceTree = "<group>"; };
+		F7B9057128AC9215003EB981 /* FLReaderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReaderController.m; sourceTree = "<group>"; };
+		F7B9057C28ACC020003EB981 /* FLBookCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell.h; sourceTree = "<group>"; };
+		F7B9057D28ACC020003EB981 /* FLBookCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell.m; sourceTree = "<group>"; };
+		F7B9057E28ACC020003EB981 /* FLBookCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell.xib; sourceTree = "<group>"; };
+		F7B9058428ACD484003EB981 /* FLReaderTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReaderTool.h; sourceTree = "<group>"; };
+		F7B9058528ACD484003EB981 /* FLReaderTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReaderTool.m; sourceTree = "<group>"; };
+		F7B9059328ADD424003EB981 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7B905A528B38131003EB981 /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
+		F7B905A628B38131003EB981 /* RequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
+		F7B905A828B6235E003EB981 /* 小说.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "小说.txt"; sourceTree = "<group>"; };
+		F7B905AA28B7598E003EB981 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookStoreController.h; sourceTree = "<group>"; };
+		F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookStoreController.m; sourceTree = "<group>"; };
+		F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookStoreController.xib; sourceTree = "<group>"; };
+		F7B905B128B76449003EB981 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		F7D17BEA28F29922006519DE /* FLMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMenuView.h; sourceTree = "<group>"; };
+		F7D17BEB28F29922006519DE /* FLMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMenuView.m; sourceTree = "<group>"; };
+		F7D17BED28F3AF77006519DE /* FLMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLMenuView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B9050C28AB82B2003EB981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E691D8250DA84C8501C287 /* Pods_BookRead.framework in Frameworks */,
+				F7B905B228B76455003EB981 /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9052728AB82B4003EB981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACEB045BC2EBC2DED492938 /* Pods_BookReadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9053228AB82B4003EB981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD226D3CEC634F652667E599 /* Pods_BookRead_BookReadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1471B6EED932652E4C03C74B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1AF04A43021398963FE88DE /* Pods-BookRead.debug.xcconfig */,
+				C182E00446FEB196A0DBAF48 /* Pods-BookRead.release.xcconfig */,
+				27210FEC27028D042B662903 /* Pods-BookRead-BookReadUITests.debug.xcconfig */,
+				462A63427E07713792664454 /* Pods-BookRead-BookReadUITests.release.xcconfig */,
+				E0150C2295EA1A191504CBEC /* Pods-BookReadTests.debug.xcconfig */,
+				020FEED0DE2A4EC158FCE39A /* Pods-BookReadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD4CA325430C222A61837F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B905B128B76449003EB981 /* libxml2.2.tbd */,
+				F7B905AA28B7598E003EB981 /* libxml2.tbd */,
+				4474E9BFFFBDBB4807CE3047 /* Pods_BookRead.framework */,
+				AFED45B9A9070BC25002342E /* Pods_BookRead_BookReadUITests.framework */,
+				121E217AB2F0199D0B0B71CF /* Pods_BookReadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F747CFC829C8432700CF46D0 /* TempHome */ = {
+			isa = PBXGroup;
+			children = (
+				F747CFCD29C8464200CF46D0 /* view */,
+				F747CFC929C8434F00CF46D0 /* controller */,
+			);
+			path = TempHome;
+			sourceTree = "<group>";
+		};
+		F747CFC929C8434F00CF46D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F747CFCA29C843A100CF46D0 /* HomeController.h */,
+				F747CFCB29C843A100CF46D0 /* HomeController.m */,
+				F747CFD429C846B700CF46D0 /* FLReadControllerT.h */,
+				F747CFD529C846B700CF46D0 /* FLReadControllerT.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F747CFCD29C8464200CF46D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F747CFD029C8468400CF46D0 /* PagingEngine.h */,
+				F747CFCE29C8468400CF46D0 /* PagingEngine.m */,
+				F747CFD129C8468400CF46D0 /* PagingTextView.h */,
+				F747CFCF29C8468400CF46D0 /* PagingTextView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F78C7E7D28BDE2D90045C9B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9057028AC9215003EB981 /* FLReaderController.h */,
+				F7B9057128AC9215003EB981 /* FLReaderController.m */,
+				F747CFD729C84C3B00CF46D0 /* FLReadDetailController.h */,
+				F747CFD829C84C3B00CF46D0 /* FLReadDetailController.m */,
+				F78C7E7F28BDEE730045C9B0 /* FLChaperListController.h */,
+				F78C7E8028BDEE730045C9B0 /* FLChaperListController.m */,
+				F78C7E8128BDEE730045C9B0 /* FLChaperListController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F78C7E7E28BDE2E90045C9B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F78C7E8428BDFD3F0045C9B0 /* FLChapterListCell.h */,
+				F78C7E8528BDFD3F0045C9B0 /* FLChapterListCell.m */,
+				F78C7E8628BDFD3F0045C9B0 /* FLChapterListCell.xib */,
+				F7D17BEA28F29922006519DE /* FLMenuView.h */,
+				F7D17BEB28F29922006519DE /* FLMenuView.m */,
+				F7D17BED28F3AF77006519DE /* FLMenuView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F78C7E8928BF3D870045C9B0 /* FCFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F78C7E8A28BF3D870045C9B0 /* FCFileManager.h */,
+				F78C7E8B28BF3D870045C9B0 /* FCFileManager.m */,
+			);
+			path = FCFileManager;
+			sourceTree = "<group>";
+		};
+		F7B9050628AB82B2003EB981 = {
+			isa = PBXGroup;
+			children = (
+				F7B9051128AB82B2003EB981 /* BookRead */,
+				F7B9052D28AB82B4003EB981 /* BookReadTests */,
+				F7B9053828AB82B4003EB981 /* BookReadUITests */,
+				F7B9051028AB82B2003EB981 /* Products */,
+				1471B6EED932652E4C03C74B /* Pods */,
+				BD4CA325430C222A61837F70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B9051028AB82B2003EB981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9050F28AB82B2003EB981 /* BookRead.app */,
+				F7B9052A28AB82B4003EB981 /* BookReadTests.xctest */,
+				F7B9053528AB82B4003EB981 /* BookReadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B9051128AB82B2003EB981 /* BookRead */ = {
+			isa = PBXGroup;
+			children = (
+				F7B905A828B6235E003EB981 /* 小说.txt */,
+				F747CFC829C8432700CF46D0 /* TempHome */,
+				F7B9055E28AC76A4003EB981 /* BookShelf */,
+				F7B9055D28AC7690003EB981 /* BookStore */,
+				F7B9055C28AC7677003EB981 /* Mine */,
+				F7B9056F28AC8057003EB981 /* Reader */,
+				F7B9054728AB903F003EB981 /* Commons */,
+				F7B9058328ACD459003EB981 /* Tools */,
+				F7B9054D28AB9893003EB981 /* Macros */,
+				F7B9054C28AB9865003EB981 /* Supporting Files */,
+				F7DDC23E29DC00E70059581F /* JSON */,
+				F7B9052328AB82B4003EB981 /* Info.plist */,
+			);
+			path = BookRead;
+			sourceTree = "<group>";
+		};
+		F7B9052D28AB82B4003EB981 /* BookReadTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9052E28AB82B4003EB981 /* BookReadTests.m */,
+				F7B9053028AB82B4003EB981 /* Info.plist */,
+			);
+			path = BookReadTests;
+			sourceTree = "<group>";
+		};
+		F7B9053828AB82B4003EB981 /* BookReadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9053928AB82B4003EB981 /* BookReadUITests.m */,
+				F7B9053B28AB82B4003EB981 /* Info.plist */,
+			);
+			path = BookReadUITests;
+			sourceTree = "<group>";
+		};
+		F7B9054728AB903F003EB981 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9055128AB9A88003EB981 /* Category */,
+				F7B9054828AB9684003EB981 /* Controller */,
+				F7B9057628ACBFA1003EB981 /* View */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		F7B9054828AB9684003EB981 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9054928AB96A2003EB981 /* BaseViewController.h */,
+				F7B9054A28AB96A2003EB981 /* BaseViewController.m */,
+				F7B9055928AC7374003EB981 /* FLTabBarController.h */,
+				F7B9055A28AC7374003EB981 /* FLTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7B9054C28AB9865003EB981 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9059328ADD424003EB981 /* LaunchScreen.storyboard */,
+				F7B9051228AB82B2003EB981 /* AppDelegate.h */,
+				F7B9051328AB82B2003EB981 /* AppDelegate.m */,
+				F7B9051E28AB82B4003EB981 /* Assets.xcassets */,
+				F7B9052428AB82B4003EB981 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7B9054D28AB9893003EB981 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9055028AB9A21003EB981 /* ColorMacros.h */,
+				F7B9054F28AB999B003EB981 /* DimensMacros.h */,
+				F7B9054E28AB98AE003EB981 /* PrefixHeader.pch */,
+				F78C7E9028C1D55C0045C9B0 /* NotificationNameDefine.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		F7B9055128AB9A88003EB981 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9055228AB9A9F003EB981 /* UIImage */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F7B9055228AB9A9F003EB981 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9055628AB9B89003EB981 /* UIImage+Extenion.h */,
+				F7B9055728AB9B89003EB981 /* UIImage+Extenion.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		F7B9055C28AC7677003EB981 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9056C28AC7B09003EB981 /* FLMineController.h */,
+				F7B9056D28AC7B09003EB981 /* FLMineController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F7B9055D28AC7690003EB981 /* BookStore */ = {
+			isa = PBXGroup;
+			children = (
+				F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */,
+				F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */,
+				F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */,
+			);
+			path = BookStore;
+			sourceTree = "<group>";
+		};
+		F7B9055E28AC76A4003EB981 /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9056628AC7AC9003EB981 /* FLBookShelfController.h */,
+				F7B9056728AC7AC9003EB981 /* FLBookShelfController.m */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
+		F7B9056228AC7791003EB981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9055F28AC778B003EB981 /* FLBookModel.h */,
+				F7B9056028AC778B003EB981 /* FLBookModel.m */,
+				F7B9056328AC7A44003EB981 /* FLChapterModel.h */,
+				F7B9056428AC7A44003EB981 /* FLChapterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7B9056F28AC8057003EB981 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				F78C7E7D28BDE2D90045C9B0 /* Controller */,
+				F78C7E7E28BDE2E90045C9B0 /* View */,
+				F7B9056228AC7791003EB981 /* Model */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		F7B9057628ACBFA1003EB981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7B9057C28ACC020003EB981 /* FLBookCollectionCell.h */,
+				F7B9057D28ACC020003EB981 /* FLBookCollectionCell.m */,
+				F7B9057E28ACC020003EB981 /* FLBookCollectionCell.xib */,
+				F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */,
+				F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */,
+				F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */,
+				F723039929D970DB00F304BF /* FLBookTableCell.h */,
+				F723039A29D970DB00F304BF /* FLBookTableCell.m */,
+				F723039B29D970DB00F304BF /* FLBookTableCell.xib */,
+				F723039E29D97DD100F304BF /* FLBookTapView.h */,
+				F723039F29D97DD100F304BF /* FLBookTapView.m */,
+				F73D470529D960B900E20CC1 /* FLBannerView.h */,
+				F73D470629D960B900E20CC1 /* FLBannerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7B9058328ACD459003EB981 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F78C7E8928BF3D870045C9B0 /* FCFileManager */,
+				F7B905A628B38131003EB981 /* RequestTool.h */,
+				F7B905A528B38131003EB981 /* RequestTool.m */,
+				F7B9058428ACD484003EB981 /* FLReaderTool.h */,
+				F7B9058528ACD484003EB981 /* FLReaderTool.m */,
+				F78C7E7A28BDDBE90045C9B0 /* FLAlertTool.h */,
+				F78C7E7B28BDDBE90045C9B0 /* FLAlertTool.m */,
+				F78C7E8D28C0AF380045C9B0 /* FLUser.h */,
+				F78C7E8E28C0AF380045C9B0 /* FLUser.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F7DDC23E29DC00E70059581F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B9050E28AB82B2003EB981 /* BookRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9053E28AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookRead" */;
+			buildPhases = (
+				0220FDAA56E2E98256E2EC29 /* [CP] Check Pods Manifest.lock */,
+				F7B9050B28AB82B2003EB981 /* Sources */,
+				F7B9050C28AB82B2003EB981 /* Frameworks */,
+				F7B9050D28AB82B2003EB981 /* Resources */,
+				FAFD5075AD9B5C4D24628303 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookRead;
+			productName = BookRead;
+			productReference = F7B9050F28AB82B2003EB981 /* BookRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7B9052928AB82B4003EB981 /* BookReadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9054128AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookReadTests" */;
+			buildPhases = (
+				67118D3A3D440B72D490F5CF /* [CP] Check Pods Manifest.lock */,
+				F7B9052628AB82B4003EB981 /* Sources */,
+				F7B9052728AB82B4003EB981 /* Frameworks */,
+				F7B9052828AB82B4003EB981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B9052C28AB82B4003EB981 /* PBXTargetDependency */,
+			);
+			name = BookReadTests;
+			productName = BookReadTests;
+			productReference = F7B9052A28AB82B4003EB981 /* BookReadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7B9053428AB82B4003EB981 /* BookReadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B9054428AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookReadUITests" */;
+			buildPhases = (
+				FAD18CC1265FD7A014BDE39E /* [CP] Check Pods Manifest.lock */,
+				F7B9053128AB82B4003EB981 /* Sources */,
+				F7B9053228AB82B4003EB981 /* Frameworks */,
+				F7B9053328AB82B4003EB981 /* Resources */,
+				9C4C6E3E4D71FDB232AC53CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7B9053728AB82B4003EB981 /* PBXTargetDependency */,
+			);
+			name = BookReadUITests;
+			productName = BookReadUITests;
+			productReference = F7B9053528AB82B4003EB981 /* BookReadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B9050728AB82B2003EB981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F7B9050E28AB82B2003EB981 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F7B9052928AB82B4003EB981 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F7B9050E28AB82B2003EB981;
+					};
+					F7B9053428AB82B4003EB981 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F7B9050E28AB82B2003EB981;
+					};
+				};
+			};
+			buildConfigurationList = F7B9050A28AB82B2003EB981 /* Build configuration list for PBXProject "BookRead" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7B9050628AB82B2003EB981;
+			productRefGroup = F7B9051028AB82B2003EB981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B9050E28AB82B2003EB981 /* BookRead */,
+				F7B9052928AB82B4003EB981 /* BookReadTests */,
+				F7B9053428AB82B4003EB981 /* BookReadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B9050D28AB82B2003EB981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B905B028B75CE1003EB981 /* FLBookStoreController.xib in Resources */,
+				F723039D29D970DB00F304BF /* FLBookTableCell.xib in Resources */,
+				F78C7E8828BDFD3F0045C9B0 /* FLChapterListCell.xib in Resources */,
+				F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */,
+				F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */,
+				F7B9058028ACC020003EB981 /* FLBookCollectionCell.xib in Resources */,
+				F7B9051F28AB82B4003EB981 /* Assets.xcassets in Resources */,
+				F7B905A928B6235F003EB981 /* 小说.txt in Resources */,
+				F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */,
+				F78C7E8328BDEE730045C9B0 /* FLChaperListController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9052828AB82B4003EB981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9053328AB82B4003EB981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0220FDAA56E2E98256E2EC29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookRead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67118D3A3D440B72D490F5CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookReadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4C6E3E4D71FDB232AC53CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRead-BookReadUITests/Pods-BookRead-BookReadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRead-BookReadUITests/Pods-BookRead-BookReadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookRead-BookReadUITests/Pods-BookRead-BookReadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD18CC1265FD7A014BDE39E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookRead-BookReadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFD5075AD9B5C4D24628303 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRead/Pods-BookRead-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookRead/Pods-BookRead-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookRead/Pods-BookRead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B9050B28AB82B2003EB981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B905AF28B75CE1003EB981 /* FLBookStoreController.m in Sources */,
+				F747CFD229C8468400CF46D0 /* PagingEngine.m in Sources */,
+				F747CFD929C84C3B00CF46D0 /* FLReadDetailController.m in Sources */,
+				F78C7E7C28BDDBE90045C9B0 /* FLAlertTool.m in Sources */,
+				F7B9057F28ACC020003EB981 /* FLBookCollectionCell.m in Sources */,
+				F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */,
+				F7B9058628ACD484003EB981 /* FLReaderTool.m in Sources */,
+				F747CFD629C846B700CF46D0 /* FLReadControllerT.m in Sources */,
+				F7D17BEC28F29922006519DE /* FLMenuView.m in Sources */,
+				F78C7E8F28C0AF380045C9B0 /* FLUser.m in Sources */,
+				F7B9057228AC9215003EB981 /* FLReaderController.m in Sources */,
+				F78C7E8C28BF3D880045C9B0 /* FCFileManager.m in Sources */,
+				F72303A029D97DD100F304BF /* FLBookTapView.m in Sources */,
+				F747CFCC29C843A100CF46D0 /* HomeController.m in Sources */,
+				F7B9056E28AC7B09003EB981 /* FLMineController.m in Sources */,
+				F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */,
+				F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */,
+				F7B9054B28AB96A2003EB981 /* BaseViewController.m in Sources */,
+				F78C7E8728BDFD3F0045C9B0 /* FLChapterListCell.m in Sources */,
+				F7B9052528AB82B4003EB981 /* main.m in Sources */,
+				F747CFD329C8468400CF46D0 /* PagingTextView.m in Sources */,
+				F7B9056128AC778B003EB981 /* FLBookModel.m in Sources */,
+				F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */,
+				F7B9056528AC7A44003EB981 /* FLChapterModel.m in Sources */,
+				F78C7E8228BDEE730045C9B0 /* FLChaperListController.m in Sources */,
+				F7B9056828AC7AC9003EB981 /* FLBookShelfController.m in Sources */,
+				F7B9055828AB9B89003EB981 /* UIImage+Extenion.m in Sources */,
+				F73D470729D960B900E20CC1 /* FLBannerView.m in Sources */,
+				F7B905A728B38131003EB981 /* RequestTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9052628AB82B4003EB981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9052F28AB82B4003EB981 /* BookReadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B9053128AB82B4003EB981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B9053A28AB82B4003EB981 /* BookReadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7B9052C28AB82B4003EB981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B9050E28AB82B2003EB981 /* BookRead */;
+			targetProxy = F7B9052B28AB82B4003EB981 /* PBXContainerItemProxy */;
+		};
+		F7B9053728AB82B4003EB981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B9050E28AB82B2003EB981 /* BookRead */;
+			targetProxy = F7B9053628AB82B4003EB981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7B9053C28AB82B4003EB981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F7B9053D28AB82B4003EB981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7B9053F28AB82B4003EB981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AF04A43021398963FE88DE /* Pods-BookRead.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8S4EA5BM93;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8S4EA5BM93;
+				GCC_PREFIX_HEADER = /Users/liufeilong/Desktop/BookRead/BookRead/Macros/PrefixHeader.pch;
+				INFOPLIST_FILE = BookRead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					/usr/include/libxml2,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.picc.pmdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = zhanyebao_dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pmdd_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B9054028AB82B4003EB981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C182E00446FEB196A0DBAF48 /* Pods-BookRead.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8S4EA5BM93;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8S4EA5BM93;
+				GCC_PREFIX_HEADER = /Users/liufeilong/Desktop/BookRead/BookRead/Macros/PrefixHeader.pch;
+				INFOPLIST_FILE = BookRead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					/usr/include/libxml2,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.picc.pmdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = PICC_zhanyebao_distribution_2021_2;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pmdd_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7B9054228AB82B4003EB981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0150C2295EA1A191504CBEC /* Pods-BookReadTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookReadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lfl.developer.test.BookReadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookRead.app/BookRead";
+			};
+			name = Debug;
+		};
+		F7B9054328AB82B4003EB981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020FEED0DE2A4EC158FCE39A /* Pods-BookReadTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookReadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lfl.developer.test.BookReadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookRead.app/BookRead";
+			};
+			name = Release;
+		};
+		F7B9054528AB82B4003EB981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27210FEC27028D042B662903 /* Pods-BookRead-BookReadUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookReadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lfl.developer.test.BookReadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookRead;
+			};
+			name = Debug;
+		};
+		F7B9054628AB82B4003EB981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462A63427E07713792664454 /* Pods-BookRead-BookReadUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookReadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lfl.developer.test.BookReadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BookRead;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B9050A28AB82B2003EB981 /* Build configuration list for PBXProject "BookRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9053C28AB82B4003EB981 /* Debug */,
+				F7B9053D28AB82B4003EB981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B9053E28AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9053F28AB82B4003EB981 /* Debug */,
+				F7B9054028AB82B4003EB981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B9054128AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookReadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9054228AB82B4003EB981 /* Debug */,
+				F7B9054328AB82B4003EB981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B9054428AB82B4003EB981 /* Build configuration list for PBXNativeTarget "BookReadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B9054528AB82B4003EB981 /* Debug */,
+				F7B9054628AB82B4003EB981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7B9050728AB82B2003EB981 /* Project object */;
+}

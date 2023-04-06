@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FLBookCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mtR-9C-dGy">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9J-KE-XJC">
+                        <rect key="frame" x="0.0" y="110" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6HQ-yq-677"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCb-E7-QVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="A76-SW-QHO"/>
+                            <constraint firstAttribute="width" constant="16" id="lAu-Q3-u95"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-iG-DAt">
+                        <rect key="frame" x="0.0" y="130" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Yhn-iF-9N3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WCb-E7-QVZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Csl-6t-Ock"/>
+                <constraint firstItem="F9J-KE-XJC" firstAttribute="top" secondItem="mtR-9C-dGy" secondAttribute="bottom" id="ELd-px-arr"/>
+                <constraint firstItem="mtR-9C-dGy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FmR-QH-bvH"/>
+                <constraint firstAttribute="trailing" secondItem="Uxb-iG-DAt" secondAttribute="trailing" id="Hlb-zQ-Qgq"/>
+                <constraint firstAttribute="bottom" secondItem="mtR-9C-dGy" secondAttribute="bottom" constant="40" id="Pyf-12-rXZ"/>
+                <constraint firstAttribute="trailing" secondItem="mtR-9C-dGy" secondAttribute="trailing" id="UUF-bE-mL7"/>
+                <constraint firstItem="mtR-9C-dGy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gMR-Iy-tpm"/>
+                <constraint firstItem="F9J-KE-XJC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gZm-qM-TSe"/>
+                <constraint firstItem="Uxb-iG-DAt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lzK-EE-CiK"/>
+                <constraint firstItem="Uxb-iG-DAt" firstAttribute="top" secondItem="F9J-KE-XJC" secondAttribute="bottom" id="pFj-iX-uD5"/>
+                <constraint firstItem="WCb-E7-QVZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qBd-uQ-qEm"/>
+                <constraint firstAttribute="trailing" secondItem="F9J-KE-XJC" secondAttribute="trailing" id="tVj-J9-eVl"/>
+            </constraints>
+            <connections>
+                <outlet property="authorName" destination="Uxb-iG-DAt" id="dw4-Ot-I9i"/>
+                <outlet property="bookName" destination="F9J-KE-XJC" id="Ypq-X2-Vsb"/>
+                <outlet property="coverimg" destination="mtR-9C-dGy" id="eFL-xd-KYg"/>
+                <outlet property="selectImg" destination="WCb-E7-QVZ" id="rwa-yc-7OL"/>
+            </connections>
+            <point key="canvasLocation" x="56.521739130434788" y="85.714285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
