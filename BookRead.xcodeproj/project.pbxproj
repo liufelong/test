@@ -14,6 +14,7 @@
 		F70EEE3B29DFA78C00F911C5 /* FLSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE3A29DFA78C00F911C5 /* FLSegmentedBar.m */; };
 		F70EEE4029DFB3C200F911C5 /* FLReadHTMLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE3E29DFB3C200F911C5 /* FLReadHTMLController.m */; };
 		F70EEE4129DFB3C200F911C5 /* FLReadHTMLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */; };
+		F70EEE4429DFDE4500F911C5 /* FLStoreListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE4329DFDE4500F911C5 /* FLStoreListController.m */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -92,6 +93,8 @@
 		F70EEE3D29DFB3C200F911C5 /* FLReadHTMLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReadHTMLController.h; sourceTree = "<group>"; };
 		F70EEE3E29DFB3C200F911C5 /* FLReadHTMLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadHTMLController.m; sourceTree = "<group>"; };
 		F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLReadHTMLController.xib; sourceTree = "<group>"; };
+		F70EEE4229DFDE4500F911C5 /* FLStoreListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLStoreListController.h; sourceTree = "<group>"; };
+		F70EEE4329DFDE4500F911C5 /* FLStoreListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLStoreListController.m; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -236,6 +239,31 @@
 				F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */,
 			);
 			path = FLReadHTMLController;
+			sourceTree = "<group>";
+		};
+		F70EEE4529DFDE5900F911C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */,
+				F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */,
+				F70EEE4229DFDE4500F911C5 /* FLStoreListController.h */,
+				F70EEE4329DFDE4500F911C5 /* FLStoreListController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F70EEE4629DFDE6D00F911C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F70EEE4729DFDE8900F911C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F747CFC829C8432700CF46D0 /* TempHome */ = {
@@ -438,8 +466,9 @@
 		F7B9055D28AC7690003EB981 /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
-				F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */,
-				F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */,
+				F70EEE4529DFDE5900F911C5 /* Controller */,
+				F70EEE4629DFDE6D00F911C5 /* View */,
+				F70EEE4729DFDE8900F911C5 /* Model */,
 			);
 			path = BookStore;
 			sourceTree = "<group>";
@@ -588,6 +617,7 @@
 		F7B9050728AB82B2003EB981 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FL;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					F7B9050E28AB82B2003EB981 = {
@@ -784,6 +814,7 @@
 				F747CFCC29C843A100CF46D0 /* HomeController.m in Sources */,
 				F70EEE4029DFB3C200F911C5 /* FLReadHTMLController.m in Sources */,
 				F7B9056E28AC7B09003EB981 /* FLMineController.m in Sources */,
+				F70EEE4429DFDE4500F911C5 /* FLStoreListController.m in Sources */,
 				F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */,
 				F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */,
 				F7B9054B28AB96A2003EB981 /* BaseViewController.m in Sources */,
