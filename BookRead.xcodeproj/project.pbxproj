@@ -11,6 +11,9 @@
 		E1E691D8250DA84C8501C287 /* Pods_BookRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4474E9BFFFBDBB4807CE3047 /* Pods_BookRead.framework */; };
 		F70C70D729DE960D007D1717 /* storeup.json in Resources */ = {isa = PBXBuildFile; fileRef = F70C70D629DE960D007D1717 /* storeup.json */; };
 		F70C70D929DE97BE007D1717 /* storedown.json in Resources */ = {isa = PBXBuildFile; fileRef = F70C70D829DE97BE007D1717 /* storedown.json */; };
+		F70EEE3B29DFA78C00F911C5 /* FLSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE3A29DFA78C00F911C5 /* FLSegmentedBar.m */; };
+		F70EEE4029DFB3C200F911C5 /* FLReadHTMLController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE3E29DFB3C200F911C5 /* FLReadHTMLController.m */; };
+		F70EEE4129DFB3C200F911C5 /* FLReadHTMLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -49,7 +52,6 @@
 		F7B905A728B38131003EB981 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B905A528B38131003EB981 /* RequestTool.m */; };
 		F7B905A928B6235F003EB981 /* 小说.txt in Resources */ = {isa = PBXBuildFile; fileRef = F7B905A828B6235E003EB981 /* 小说.txt */; };
 		F7B905AF28B75CE1003EB981 /* FLBookStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */; };
-		F7B905B028B75CE1003EB981 /* FLBookStoreController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */; };
 		F7B905B228B76455003EB981 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B905B128B76449003EB981 /* libxml2.2.tbd */; };
 		F7D17BEC28F29922006519DE /* FLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D17BEB28F29922006519DE /* FLMenuView.m */; };
 		F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D17BED28F3AF77006519DE /* FLMenuView.xib */; };
@@ -85,6 +87,11 @@
 		E0150C2295EA1A191504CBEC /* Pods-BookReadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookReadTests.debug.xcconfig"; path = "Target Support Files/Pods-BookReadTests/Pods-BookReadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F70C70D629DE960D007D1717 /* storeup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storeup.json; sourceTree = "<group>"; };
 		F70C70D829DE97BE007D1717 /* storedown.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = storedown.json; sourceTree = "<group>"; };
+		F70EEE3929DFA78C00F911C5 /* FLSegmentedBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLSegmentedBar.h; sourceTree = "<group>"; };
+		F70EEE3A29DFA78C00F911C5 /* FLSegmentedBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLSegmentedBar.m; sourceTree = "<group>"; };
+		F70EEE3D29DFB3C200F911C5 /* FLReadHTMLController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReadHTMLController.h; sourceTree = "<group>"; };
+		F70EEE3E29DFB3C200F911C5 /* FLReadHTMLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadHTMLController.m; sourceTree = "<group>"; };
+		F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLReadHTMLController.xib; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -161,7 +168,6 @@
 		F7B905AA28B7598E003EB981 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookStoreController.h; sourceTree = "<group>"; };
 		F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookStoreController.m; sourceTree = "<group>"; };
-		F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookStoreController.xib; sourceTree = "<group>"; };
 		F7B905B128B76449003EB981 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		F7D17BEA28F29922006519DE /* FLMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMenuView.h; sourceTree = "<group>"; };
 		F7D17BEB28F29922006519DE /* FLMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMenuView.m; sourceTree = "<group>"; };
@@ -220,6 +226,16 @@
 				121E217AB2F0199D0B0B71CF /* Pods_BookReadTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F70EEE3C29DFB39A00F911C5 /* FLReadHTMLController */ = {
+			isa = PBXGroup;
+			children = (
+				F70EEE3D29DFB3C200F911C5 /* FLReadHTMLController.h */,
+				F70EEE3E29DFB3C200F911C5 /* FLReadHTMLController.m */,
+				F70EEE3F29DFB3C200F911C5 /* FLReadHTMLController.xib */,
+			);
+			path = FLReadHTMLController;
 			sourceTree = "<group>";
 		};
 		F747CFC829C8432700CF46D0 /* TempHome */ = {
@@ -412,6 +428,7 @@
 		F7B9055C28AC7677003EB981 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F70EEE3C29DFB39A00F911C5 /* FLReadHTMLController */,
 				F7B9056C28AC7B09003EB981 /* FLMineController.h */,
 				F7B9056D28AC7B09003EB981 /* FLMineController.m */,
 			);
@@ -423,7 +440,6 @@
 			children = (
 				F7B905AC28B75CE1003EB981 /* FLBookStoreController.h */,
 				F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */,
-				F7B905AE28B75CE1003EB981 /* FLBookStoreController.xib */,
 			);
 			path = BookStore;
 			sourceTree = "<group>";
@@ -474,6 +490,8 @@
 				F723039F29D97DD100F304BF /* FLBookTapView.m */,
 				F73D470529D960B900E20CC1 /* FLBannerView.h */,
 				F73D470629D960B900E20CC1 /* FLBannerView.m */,
+				F70EEE3929DFA78C00F911C5 /* FLSegmentedBar.h */,
+				F70EEE3A29DFA78C00F911C5 /* FLSegmentedBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,7 +628,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B905B028B75CE1003EB981 /* FLBookStoreController.xib in Resources */,
 				F723039D29D970DB00F304BF /* FLBookTableCell.xib in Resources */,
 				F78C7E8828BDFD3F0045C9B0 /* FLChapterListCell.xib in Resources */,
 				F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */,
@@ -622,6 +639,7 @@
 				F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */,
 				F78C7E8328BDEE730045C9B0 /* FLChaperListController.xib in Resources */,
 				F70C70D929DE97BE007D1717 /* storedown.json in Resources */,
+				F70EEE4129DFB3C200F911C5 /* FLReadHTMLController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70EEE3B29DFA78C00F911C5 /* FLSegmentedBar.m in Sources */,
 				F7B905AF28B75CE1003EB981 /* FLBookStoreController.m in Sources */,
 				F747CFD229C8468400CF46D0 /* PagingEngine.m in Sources */,
 				F747CFD929C84C3B00CF46D0 /* FLReadDetailController.m in Sources */,
@@ -763,6 +782,7 @@
 				F78C7E8C28BF3D880045C9B0 /* FCFileManager.m in Sources */,
 				F72303A029D97DD100F304BF /* FLBookTapView.m in Sources */,
 				F747CFCC29C843A100CF46D0 /* HomeController.m in Sources */,
+				F70EEE4029DFB3C200F911C5 /* FLReadHTMLController.m in Sources */,
 				F7B9056E28AC7B09003EB981 /* FLMineController.m in Sources */,
 				F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */,
 				F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */,

@@ -35,7 +35,7 @@
     [self.coverimg sd_setImageWithURL:[NSURL URLWithString:model.coverimg] placeholderImage:[UIImage imageNamed:@"coverDefault"]];
     self.bookName.text = model.bookname;
     self.authorName.text = model.authorname;
-    self.preface.text = model.preface;
+    self.preface.text = model.introduction;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

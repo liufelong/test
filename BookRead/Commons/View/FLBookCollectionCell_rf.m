@@ -20,8 +20,8 @@
     
     [self.coverimg sd_setImageWithURL:[NSURL URLWithString:model.coverimg] placeholderImage:[UIImage imageNamed:@"coverDefault"]];
     self.bookName.text = model.bookname;
-    self.adviceCount.text = model.adviceCount;
-    self.preface.text = model.preface;
+    self.adviceCount.text = model.advicecount;
+    self.preface.text = model.introduction;
 }
 
 @end

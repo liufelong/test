@@ -65,6 +65,13 @@ static inline BOOL isIPhoneXSeries() {
 #define MAKESURE(str) [FLAlertTool makeSureValue:str]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+//字体设置
+#define CustomFont(s) [UIFont systemFontOfSize:s]
+#define WeightMediumFont(s) [UIFont systemFontOfSize:s weight:UIFontWeightMedium]
+#define WeightSemiboldFont(s) [UIFont systemFontOfSize:s weight:UIFontWeightSemibold]
+#define WeightRegularFont(s) [UIFont systemFontOfSize:s weight:UIFontWeightRegular]
+#define WeightBoldFont(s) [UIFont systemFontOfSize:s weight:UIFontWeightBold]
+
 //真机log输出
 #define NSLog(format, ...) printf("\n[%s] %s [第%d行] %s\n",__TIME__ ,__FUNCTION__ ,__LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
 #else

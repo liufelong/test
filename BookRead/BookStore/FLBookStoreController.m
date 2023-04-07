@@ -6,10 +6,14 @@
 //
 
 #import "FLBookStoreController.h"
-#import "FLChaperListController.h"
+#import "FLSegmentedBar.h"
 
 @interface FLBookStoreController ()
-@property (weak, nonatomic) IBOutlet UITextView *urlField;
+
+@property (nonatomic, strong) FLSegmentedBar *segmentedBar;
+@property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *classcodes;
+@property (nonatomic, strong) NSMutableArray *containerArr;
 
 @end
 
@@ -17,40 +21,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.titles = @[@"意外健康险",@"责任险",@"家财险", @"货运险" ,@"保证险",@"组合险", @"企财险" , @"航空险", @"个人非车险",@"工程险"].mutableCopy;
+    self.classcodes = @[@"06" ,@"10", @"02", @"09" ,@"12",@"21", @"01", @"16",@"29",@"03" ].mutableCopy;
+    
+    self.containerArr = @[].mutableCopy;
+    
+    [self setupSubviews];
 }
 
-- (IBAction)readBtn:(id)sender {
-    [self.view endEditing:YES];
+- (void)setupSubviews {
+    self.segmentedBar = [[FLSegmentedBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 100, 40)];
+    self.segmentedBar.selectColor = [UIColor whiteColor];
+    self.segmentedBar.normalColor = [UIColor blackColor];
+    self.segmentedBar.selectFont = CustomFont(15);
+    self.segmentedBar.normalFont = CustomFont(14);
+    self.segmentedBar.titleItems = self.titles;
+    self.segmentedBar.autoItemWidth = YES;
+   
+//    [self.view addSubview:self.segmentedBar];
     
-    NSString *url = self.urlField.text;
+    self.navigationItem.titleView = self.segmentedBar;
     
-//    url = @"https://wujixsw.com/11_11550/";
-//    url = @"http://www.biqu5200.net/0_7/";
-//    url = @"https://www.ddxs.cc/ddxs/183711/";
-//    url = @"http://www.luoshenol.com/book/70_70419/";
-//    url = @"https://www.ixuanshu.org/book/141/";
-//    url = @"http://www.biquge.info/74_74132/?kkzqfa=kf0pk3&uirspm=k1sx03";
-//    url = @"https://www.121du.cc/12340/";
-    
-//    NSURL *baseUrl = [NSURL URLWithString:@"https://www.121du.cc/12340"];
-//    NSURL *url = [NSURL URLWithString:@"/12340/51156.html" relativeToURL:baseUrl];
-//    NSLog(@"%@",[url absoluteString]);
-    
-    if (url.length == 0) {
-        [FLAlertTool alertWithTitle:@"提示" message:@"请粘贴目录地址"];
-        return;
-    }
-    [FLReaderTool readHTMLElementWith:url succesBolck:^(FLBookModel * _Nonnull bookModel) {
-        [self jumpToChapterList:bookModel];
+    WS(weakSelf);
+    [self.segmentedBar setDidSelectedItemAtIndex:^(NSInteger index) {
+//        [weakSelf showVc:index];
     }];
-}
-
-- (void)jumpToChapterList:(FLBookModel *)bookModel {
-    FLChaperListController *readerController = [[FLChaperListController alloc] init];
-    readerController.bookModel = bookModel;
-    readerController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:readerController animated:YES];
 }
 
 @end
