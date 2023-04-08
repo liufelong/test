@@ -20,12 +20,12 @@
 - (void)createUI {
     self.tapNameLb = [[UILabel alloc] init];
     self.tapNameLb.font = [UIFont systemFontOfSize:12];
-    self.tapNameLb.textColor = CX_COLOR_666;
+    self.tapNameLb.textColor = CX_COLOR_999;
     
-    self.tapNameLb.layer.masksToBounds = YES;
-    self.tapNameLb.layer.cornerRadius = 2;
-    self.tapNameLb.layer.borderWidth = 1;
-    self.tapNameLb.layer.borderColor = CX_COLOR_666.CGColor;
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = 2;
+    self.layer.borderWidth = 1;
+    self.layer.borderColor = CX_COLOR_999.CGColor;
     
     [self addSubview:self.tapNameLb];
     [self.tapNameLb mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -38,8 +38,11 @@
     
     self.tapNameLb.text = tapModel.tapname;
     if (tapModel.colorstring.length > 0) {
-        self.tapNameLb.layer.borderColor = tapModel.colorUi.CGColor;
+        self.layer.borderColor = tapModel.colorUi.CGColor;
         self.tapNameLb.textColor = tapModel.colorUi;
+    }else {
+        self.layer.borderColor = CX_COLOR_999.CGColor;
+        self.tapNameLb.textColor = CX_COLOR_999;
     }
 }
 

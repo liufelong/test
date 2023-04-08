@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
+#define FLRequest [RequestTool tool]
+
 @interface RequestTool : NSObject
 
 + (RequestTool *)tool;
@@ -28,6 +30,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)requsetGetDownloadWithUrl:(NSString *)url
                           Success:(void (^)(id  _Nonnull result))success
                        andFailure:(void(^)(NSString *errorType))failure;
+
+- (void)requsetPostWithUrl:(NSString *)url
+                      body:(NSDictionary *)body
+                   Success:(void (^)(id  _Nonnull result))success
+                andFailure:(void(^)(NSString *errorType))failure;
 
 @end
 

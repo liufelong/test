@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *coverimg;
 @property (weak, nonatomic) IBOutlet UILabel *bookName;
-@property (weak, nonatomic) IBOutlet UITextView *preface;
+@property (weak, nonatomic) IBOutlet UILabel *preface;
 @property (weak, nonatomic) IBOutlet UILabel *adviceCount;
 
 @property (strong, nonatomic) FLBookModel *model;

@@ -31,6 +31,17 @@
 }
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    if ([key isEqualToString:@"taplist"]) {
+        self.tapArr = @[].mutableCopy;
+        NSArray *taplist = (NSArray *)value;
+        for (NSDictionary *dict in taplist) {
+            FLTapModel *item = [[FLTapModel alloc] init];
+            [item setValuesForKeysWithDictionary:dict];
+            if (![FLAlertTool isNullObj:item.tapname]) {
+                [self.tapArr addObject:item];
+            }
+        }
+    }
     NSLog(@"value:%@,undefineKey:%@",value,key);
 }
 

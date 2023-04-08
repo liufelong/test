@@ -19,6 +19,9 @@
 @property (nonatomic, strong) FLSegmentedBar *segmentedBar;
 @property (nonatomic, strong) UIScrollView *bgScrollView;
 
+/*!<#备注#>*/
+@property (assign, nonatomic) CGFloat hight;
+
 @end
 
 @implementation FLBookStoreController
@@ -31,7 +34,12 @@
     
     self.containerArr = @[].mutableCopy;
     
+//    self.hight = CGRectGetHeight(self.view.frame) - TAB_BAR_Safe_HEIGHT;
+    self.hight = SCREEN_HEIGHT - 176;
+    
     [self setupSubviews];
+    
+    [self showVc:0];
 }
 
 - (void)setupSubviews {
@@ -51,9 +59,15 @@
     }];
     
 //    self.bgScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-CGRectGetMaxY(self.segmentedBar.frame)-TAB_SAFE_HEIGHT)];
-    self.bgScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+
+    self.bgScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, self.hight)];
     [self.view addSubview:self.bgScrollView];
-    self.bgScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.bgScrollView.frame)*self.titles.count, CGRectGetHeight(self.bgScrollView.frame));
+//    [self.bgScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.left.right.equalTo(self.view);
+//        make.bottom.equalTo(self.view).offset(-TAB_BAR_Safe_HEIGHT);
+//    }];
+    
+    self.bgScrollView.contentSize = CGSizeMake(CGRectGetWidth(self.bgScrollView.frame)*self.titles.count, self.hight);
     self.bgScrollView.backgroundColor = [UIColor clearColor];
     self.bgScrollView.pagingEnabled = YES;
     self.bgScrollView.bounces = NO;
@@ -68,12 +82,12 @@
     
     CGFloat width = CGRectGetWidth(self.bgScrollView.frame);
     if ([self.containerArr[index] isKindOfClass:[NSNull class]]) {
-        CGFloat height = CGRectGetHeight(self.bgScrollView.frame);
+//        CGFloat height = CGRectGetHeight(self.bgScrollView.frame);
         
         UIViewController *vc = [self scrollContainerViewControllerAtIndex:index];
         [self addChildViewController:vc];
         [vc didMoveToParentViewController:self];
-        vc.view.frame = CGRectMake(width*index, 0, width, height);
+        vc.view.frame = CGRectMake(width*index, 0, width, self.hight);
         [self.bgScrollView addSubview:vc.view];
         [self.containerArr replaceObjectAtIndex:index withObject:vc];
     }

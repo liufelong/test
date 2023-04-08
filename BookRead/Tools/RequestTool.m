@@ -138,5 +138,19 @@ static RequestTool *requestTool = nil;
     }];
 }
 
+- (void)requsetPostWithUrl:(NSString *)url
+                      body:(NSDictionary *)body
+                   Success:(void (^)(id  _Nonnull result))success
+                andFailure:(void(^)(NSString *errorType))failure {
+    
+    if (url.length < 0) {
+        failure(@"链接为空");
+        return;
+    }
+    
+    NSMutableDictionary *dict = [FLReaderTool readerJsonDictionryWithFiledName:url];
+    success(dict);
+}
+
 
 @end

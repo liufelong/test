@@ -1,14 +1,14 @@
 //
-//  FLBookCollectionCell.m
+//  FLBookShelfCollectionCell.m
 //  BookRead
 //
 //  Created by 刘飞龙 on 2023/4/8.
 //
 
-#import "FLBookCollectionCell.h"
+#import "FLBookShelfCollectionCell.h"
 #import <UIImageView+WebCache.h>
 
-@implementation FLBookCollectionCell
+@implementation FLBookShelfCollectionCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -23,5 +23,6 @@
     self.authorName.text = model.authorname;
     
 }
+
 
 @end

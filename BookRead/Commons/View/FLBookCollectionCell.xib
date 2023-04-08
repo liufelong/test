@@ -1,72 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FLBookCollectionCell">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="108" height="153"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="108" height="153"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mtR-9C-dGy">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97e-xE-isX">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="123"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9J-KE-XJC">
-                        <rect key="frame" x="0.0" y="110" width="100" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcq-Si-Dkh">
+                        <rect key="frame" x="0.0" y="123" width="108" height="15"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="6HQ-yq-677"/>
+                            <constraint firstAttribute="height" constant="15" id="tPd-sr-4Wa"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCb-E7-QVZ">
-                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgn-Ve-SEW">
+                        <rect key="frame" x="0.0" y="138" width="108" height="15"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="16" id="A76-SW-QHO"/>
-                            <constraint firstAttribute="width" constant="16" id="lAu-Q3-u95"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxb-iG-DAt">
-                        <rect key="frame" x="0.0" y="130" width="100" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="Yhn-iF-9N3"/>
+                            <constraint firstAttribute="height" constant="15" id="E0t-hB-UxA"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <constraints>
-                <constraint firstItem="WCb-E7-QVZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Csl-6t-Ock"/>
-                <constraint firstItem="F9J-KE-XJC" firstAttribute="top" secondItem="mtR-9C-dGy" secondAttribute="bottom" id="ELd-px-arr"/>
-                <constraint firstItem="mtR-9C-dGy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FmR-QH-bvH"/>
-                <constraint firstAttribute="trailing" secondItem="Uxb-iG-DAt" secondAttribute="trailing" id="Hlb-zQ-Qgq"/>
-                <constraint firstAttribute="bottom" secondItem="mtR-9C-dGy" secondAttribute="bottom" constant="40" id="Pyf-12-rXZ"/>
-                <constraint firstAttribute="trailing" secondItem="mtR-9C-dGy" secondAttribute="trailing" id="UUF-bE-mL7"/>
-                <constraint firstItem="mtR-9C-dGy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gMR-Iy-tpm"/>
-                <constraint firstItem="F9J-KE-XJC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gZm-qM-TSe"/>
-                <constraint firstItem="Uxb-iG-DAt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lzK-EE-CiK"/>
-                <constraint firstItem="Uxb-iG-DAt" firstAttribute="top" secondItem="F9J-KE-XJC" secondAttribute="bottom" id="pFj-iX-uD5"/>
-                <constraint firstItem="WCb-E7-QVZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qBd-uQ-qEm"/>
-                <constraint firstAttribute="trailing" secondItem="F9J-KE-XJC" secondAttribute="trailing" id="tVj-J9-eVl"/>
+                <constraint firstItem="97e-xE-isX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EUo-BW-WeM"/>
+                <constraint firstAttribute="bottom" secondItem="97e-xE-isX" secondAttribute="bottom" constant="30" id="KDi-EX-z7b"/>
+                <constraint firstItem="97e-xE-isX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RC9-WW-1db"/>
+                <constraint firstItem="Gcq-Si-Dkh" firstAttribute="top" secondItem="97e-xE-isX" secondAttribute="bottom" id="SF8-NR-Kw6"/>
+                <constraint firstAttribute="trailing" secondItem="Gcq-Si-Dkh" secondAttribute="trailing" id="ZiQ-Qx-Ncm"/>
+                <constraint firstAttribute="trailing" secondItem="Vgn-Ve-SEW" secondAttribute="trailing" id="hVF-9a-PZD"/>
+                <constraint firstItem="Vgn-Ve-SEW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="krK-34-2QI"/>
+                <constraint firstItem="Gcq-Si-Dkh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lP6-x5-8WP"/>
+                <constraint firstAttribute="trailing" secondItem="97e-xE-isX" secondAttribute="trailing" id="tGu-mL-TAI"/>
+                <constraint firstAttribute="bottom" secondItem="Vgn-Ve-SEW" secondAttribute="bottom" id="z1N-Dn-geB"/>
             </constraints>
+            <size key="customSize" width="108" height="153"/>
             <connections>
-                <outlet property="authorName" destination="Uxb-iG-DAt" id="dw4-Ot-I9i"/>
-                <outlet property="bookName" destination="F9J-KE-XJC" id="Ypq-X2-Vsb"/>
-                <outlet property="coverimg" destination="mtR-9C-dGy" id="eFL-xd-KYg"/>
-                <outlet property="selectImg" destination="WCb-E7-QVZ" id="rwa-yc-7OL"/>
+                <outlet property="authorName" destination="Vgn-Ve-SEW" id="TRD-ER-3iJ"/>
+                <outlet property="bookName" destination="Gcq-Si-Dkh" id="kAo-Ug-dLb"/>
+                <outlet property="coverimg" destination="97e-xE-isX" id="IRx-ot-HME"/>
             </connections>
-            <point key="canvasLocation" x="56.521739130434788" y="85.714285714285708"/>
+            <point key="canvasLocation" x="135.38461538461539" y="36.611374407582936"/>
         </collectionViewCell>
     </objects>
 </document>

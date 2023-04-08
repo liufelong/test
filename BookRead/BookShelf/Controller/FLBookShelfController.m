@@ -8,7 +8,7 @@
 #import "FLBookShelfController.h"
 #import "FLReaderController.h"
 
-#import "FLBookCollectionCell.h"
+#import "FLBookShelfCollectionCell.h"
 #import "FLBookModel.h"
 
 @interface FLBookShelfController ()<UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
@@ -57,7 +57,7 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    [self.collectionView registerNib:[UINib nibWithNibName:@"FLBookCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"FLBookCollectionCell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"FLBookShelfCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"FLBookShelfCollectionCell"];
     [self.collectionView reloadData];
     
     UILongPressGestureRecognizer *longPressGes = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
@@ -190,7 +190,7 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    FLBookCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FLBookCollectionCell" forIndexPath:indexPath];
+    FLBookShelfCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FLBookShelfCollectionCell" forIndexPath:indexPath];
     
     
     FLBookModel *model = self.dataArr[indexPath.row];

@@ -64,141 +64,6 @@
         "menulist":[
             {
                 "title":"精品汇聚",
-                "stype":"1",
-                "menuid":"",
-                "hasmore":"1",
-                "booklist":[
-                    {
-                        "bookid":"",
-                        "bookname":"都市兵锋",
-                        "authorname":"青锋刀客",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201807191525202253.jpg",
-                        "bannerimg":"",
-                        "introduction":"龙渊特战队的尖刀兵锋林少锋，回归都市后，偶然获知有关他家族的秘密，卷入了一场惊天的阴谋之中……",
-                        "advicecount":"363.5万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"热血",
-                                "colorstring":"#FE5958"
-                            },
-                            {
-                                "tapname":"扮猪吃虎",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"打工",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"护花",
-                                "colorstring":""
-                            }
-                        ],
-                    },
-                    {
-                        "bookid":"",
-                        "bookname":"魔幻奇团",
-                        "authorname":"妙小萌",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201611291354524698.jpg",
-                        "bannerimg":"",
-                        "introduction":"寻找传说中的五种能源，传说只是传说，终究都是一场梦。当梦醒时又该如何迎接爱情的难关，被控制的梓昊，失去的记忆，最终谁又能逆转结局。",
-                        "advicecount":"68.1万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            }
-                        ],
-                    },
-                    {
-                        "bookid":"",
-                        "bookname":"魔幻奇团",
-                        "authorname":"妙小萌",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201611291354524698.jpg",
-                        "bannerimg":"",
-                        "introduction":"寻找传说中的五种能源，传说只是传说，终究都是一场梦。当梦醒时又该如何迎接爱情的难关，被控制的梓昊，失去的记忆，最终谁又能逆转结局。",
-                        "advicecount":"68.1万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"校园",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"爱情",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"魔幻",
-                                "colorstring":""
-                            }
-                        ],
-                    },
-                    {
-                        "bookid":"",
-                        "bookname":"菜鸟道士俏猫妖",
-                        "authorname":"仙侣奇",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201612061159041286.jpg",
-                        "bannerimg":"",
-                        "introduction":"好不容易修炼成精，却被道士所捕，好在路遇仙人相救！当她对仙人暗生情愫之时，仙人却莫名失踪。她寻了他上百年，却只遇到一个菜鸟小道士！rn乾嘉年间，盛世难再，旋即又战乱不休，妖物四起。痴情的鬼魅、幻想长生的妖兽、意图修仙的精灵纷纷活跃起来。在这之中发生的一件件绮丽深情的故事在梦安居中上演，梦安居主人类无烟以旁人姿态看尽悲欢离合，殊不知自己命运中的劫数正在这一件件奇事中初露端倪",
-                        "advicecount":"68.1万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"仙侠",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"浪漫",
-                                "colorstring":""
-                            }
-                        ],
-                    },
-                    {
-                        "bookid":"",
-                        "bookname":"吸血鬼女王传奇",
-                        "authorname":"AlienShooter",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201707251340061013.jpg",
-                        "bannerimg":"",
-                        "introduction":"从普通的黄皮肤女子到惊悚畏怖的吸血鬼女王，是神明的安排还是恶魔的玩笑，或只是她从一开始就决定要走的路。",
-                        "advicecount":"68.1万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            }
-                        ],
-                    },
-                    {
-                        "bookid":"",
-                        "bookname":"夫人太刁蛮",
-                        "authorname":"昭昭",
-                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201701090003304709.jpg",
-                        "bannerimg":"",
-                        "introduction":"成弃妇了！见过惨的，没见过这么惨的！现实生活中被老公抛弃，重生后又穿在扫地出门的弃妇身上！好不容易回娘家，娘家还被抄了家？为毛咱都惨成这样，还有腹黑戏谑的王爷舍命相助，更有那个厚颜无耻的前夫时不时前来搔扰。温子君郁闷的仰天长叹：“看我绝地大翻身！”",
-                        "advicecount":"68.1万人推荐",
-                        "taplist":[
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            },
-                            {
-                                "tapname":"",
-                                "colorstring":""
-                            }
-                        ],
-                    }
-                    
-                ],
-            },
-            {
-                "title":"精品专场",
                 "stype":"2",
                 "menuid":"",
                 "hasmore":"1",
@@ -333,7 +198,7 @@
                 ],
             },
             {
-                "title":"最好看的书",
+                "title":"精品专场",
                 "stype":"1",
                 "menuid":"",
                 "hasmore":"1",
@@ -464,11 +329,10 @@
                             }
                         ],
                     }
-                    
                 ],
             },
             {
-                "title":"点击上十万的好书",
+                "title":"最好看的书",
                 "stype":"3",
                 "menuid":"",
                 "hasmore":"1",
@@ -603,8 +467,143 @@
                 ],
             },
             {
-                "title":"大家都在搜",
+                "title":"点击上十万的好书",
                 "stype":"1",
+                "menuid":"",
+                "hasmore":"1",
+                "booklist":[
+                    {
+                        "bookid":"",
+                        "bookname":"都市兵锋",
+                        "authorname":"青锋刀客",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201807191525202253.jpg",
+                        "bannerimg":"",
+                        "introduction":"龙渊特战队的尖刀兵锋林少锋，回归都市后，偶然获知有关他家族的秘密，卷入了一场惊天的阴谋之中……",
+                        "advicecount":"363.5万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"热血",
+                                "colorstring":"#FE5958"
+                            },
+                            {
+                                "tapname":"扮猪吃虎",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"打工",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"护花",
+                                "colorstring":""
+                            }
+                        ],
+                    },
+                    {
+                        "bookid":"",
+                        "bookname":"魔幻奇团",
+                        "authorname":"妙小萌",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201611291354524698.jpg",
+                        "bannerimg":"",
+                        "introduction":"寻找传说中的五种能源，传说只是传说，终究都是一场梦。当梦醒时又该如何迎接爱情的难关，被控制的梓昊，失去的记忆，最终谁又能逆转结局。",
+                        "advicecount":"68.1万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            }
+                        ],
+                    },
+                    {
+                        "bookid":"",
+                        "bookname":"魔幻奇团",
+                        "authorname":"妙小萌",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201611291354524698.jpg",
+                        "bannerimg":"",
+                        "introduction":"寻找传说中的五种能源，传说只是传说，终究都是一场梦。当梦醒时又该如何迎接爱情的难关，被控制的梓昊，失去的记忆，最终谁又能逆转结局。",
+                        "advicecount":"68.1万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"校园",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"爱情",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"魔幻",
+                                "colorstring":""
+                            }
+                        ],
+                    },
+                    {
+                        "bookid":"",
+                        "bookname":"菜鸟道士俏猫妖",
+                        "authorname":"仙侣奇",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201612061159041286.jpg",
+                        "bannerimg":"",
+                        "introduction":"好不容易修炼成精，却被道士所捕，好在路遇仙人相救！当她对仙人暗生情愫之时，仙人却莫名失踪。她寻了他上百年，却只遇到一个菜鸟小道士！rn乾嘉年间，盛世难再，旋即又战乱不休，妖物四起。痴情的鬼魅、幻想长生的妖兽、意图修仙的精灵纷纷活跃起来。在这之中发生的一件件绮丽深情的故事在梦安居中上演，梦安居主人类无烟以旁人姿态看尽悲欢离合，殊不知自己命运中的劫数正在这一件件奇事中初露端倪",
+                        "advicecount":"68.1万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"仙侠",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"浪漫",
+                                "colorstring":""
+                            }
+                        ],
+                    },
+                    {
+                        "bookid":"",
+                        "bookname":"吸血鬼女王传奇",
+                        "authorname":"AlienShooter",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201707251340061013.jpg",
+                        "bannerimg":"",
+                        "introduction":"从普通的黄皮肤女子到惊悚畏怖的吸血鬼女王，是神明的安排还是恶魔的玩笑，或只是她从一开始就决定要走的路。",
+                        "advicecount":"68.1万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            }
+                        ],
+                    },
+                    {
+                        "bookid":"",
+                        "bookname":"夫人太刁蛮",
+                        "authorname":"昭昭",
+                        "coverimg":"http://img-tailor.11222.cn/bcv/big/201701090003304709.jpg",
+                        "bannerimg":"",
+                        "introduction":"成弃妇了！见过惨的，没见过这么惨的！现实生活中被老公抛弃，重生后又穿在扫地出门的弃妇身上！好不容易回娘家，娘家还被抄了家？为毛咱都惨成这样，还有腹黑戏谑的王爷舍命相助，更有那个厚颜无耻的前夫时不时前来搔扰。温子君郁闷的仰天长叹：“看我绝地大翻身！”",
+                        "advicecount":"68.1万人推荐",
+                        "taplist":[
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            },
+                            {
+                                "tapname":"",
+                                "colorstring":""
+                            }
+                        ],
+                    }
+                    
+                ],
+            },
+            {
+                "title":"大家都在搜",
+                "stype":"2",
                 "menuid":"",
                 "hasmore":"1",
                 "booklist":[
