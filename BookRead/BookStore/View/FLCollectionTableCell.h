@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!<#备注#>*/
 @property (strong, nonatomic) FLStoreDataModel *model;
+@property (copy, nonatomic) void(^cellSelectBlock)(FLBookModel *bookmodel);
 
 @end
 

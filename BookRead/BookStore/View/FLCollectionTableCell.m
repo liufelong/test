@@ -41,7 +41,7 @@
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 5;
+    return 10;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
@@ -71,17 +71,10 @@
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    FLBookModel *model = self.dataArr[indexPath.row];
-//    if (self.isEdit) {
-//        //刷新目标cell
-//        model.isSelect = !model.isSelect;
-//        [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
-//        return;
-//    }
-//    FLReaderController *readerController = [[FLReaderController alloc] init];
-//    readerController.bookModel = model;
-//    readerController.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:readerController animated:YES];
+    FLBookModel *model = self.model.booklist[indexPath.row];
+    if (self.cellSelectBlock) {
+        self.cellSelectBlock(model);
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

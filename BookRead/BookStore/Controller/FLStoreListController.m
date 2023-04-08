@@ -54,9 +54,13 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.equalTo(self.view);
     }];
-//    self.bannerView = [[FLBannerView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
-//
-//    self.tableView.tableHeaderView = self.bannerView;
+    self.bannerView = [[FLBannerView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 0.618) scrollDuration:5];
+    WS(weakSelf);
+    [self.bannerView setBannerDidClicked:^(NSInteger index) {
+        [weakSelf bannerClickWithIndex:index];
+    }];
+
+    self.tableView.tableHeaderView = self.bannerView;
 }
 
 - (void)bannerViewShowImage {
@@ -72,7 +76,7 @@
     
     WS(weakSelf);
     [FLStoreRequest requestStoreInfoWithBody:@{} andSuccess:^(id  _Nonnull result) {
-        weakSelf.bannerView = result[@"banner"];
+        weakSelf.bannerDataArr = result[@"banner"];
         NSMutableArray *menulist = result[@"menulist"];
         
         for (NSDictionary *dict in menulist) {
@@ -84,7 +88,7 @@
             [weakSelf.dataArr addObject:model];
         }
         
-//        [weakSelf bannerViewShowImage];
+        [weakSelf bannerViewShowImage];
         
         [weakSelf.tableView reloadData];
     } andFailure:^(NSString * _Nonnull errorType) {
@@ -93,6 +97,15 @@
     
 }
 
+- (void)tableSelectBook:(FLBookModel *)bookmodel {
+    
+}
+
+- (void)bannerClickWithIndex:(NSInteger)index {
+    
+}
+
+#pragma mark - datasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataArr.count;
 }
@@ -121,11 +134,25 @@
         if (!cell) {
             cell = [[NSBundle mainBundle] loadNibNamed:@"FLCollectionTableCell" owner:nil options:nil][0];
         }
+        WS(weakSelf);
+        [cell setCellSelectBlock:^(FLBookModel * _Nonnull bookmodel) {
+            [weakSelf tableSelectBook:bookmodel];
+        }];
         cell.model = model;
         return cell;
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FLStoreDataModel *model = self.dataArr[indexPath.section];
+    if (![model.stype isEqualToString:@"1"]) {
+        return;
+    }
+    FLBookModel *bookmodel = model.booklist[indexPath.row];
+    [self tableSelectBook:bookmodel];
+}
+
+#pragma mark delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 44;
 }

@@ -28,13 +28,13 @@
     int number = 1;
     if ([self.stype isEqualToString:@"2"]) {
         number = 4;
-        witdh = (SCREEN_WIDTH - 54) / number;
+        witdh = (SCREEN_WIDTH - 39) / number;
         hight = witdh / 0.618;
         self.size = CGSizeMake(witdh, hight);
         
     }else{ // if ([self.stype isEqualToString:@"3"])
         number = 2;
-        witdh = (SCREEN_WIDTH - 34) / number;
+        witdh = (SCREEN_WIDTH - 29) / number;
         hight = witdh * 0.618;
         self.size = CGSizeMake(witdh, hight);
     }
