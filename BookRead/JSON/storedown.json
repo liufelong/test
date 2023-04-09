@@ -872,5 +872,32 @@
                 ],
             }
         ],
+        "bookclass":[
+            {
+                "title":"分类",
+                "iconimage":"",
+                "classcode":"1",
+            },
+            {
+                "title":"榜单",
+                "iconimage":"",
+                "classcode":"2",
+            },
+            {
+                "title":"会员",
+                "iconimage":"",
+                "classcode":"3",
+            },
+            {
+                "title":"完结",
+                "iconimage":"",
+                "classcode":"4",
+            },
+            {
+                "title":"出版",
+                "iconimage":"",
+                "classcode":"5",
+            },
+        ],
 	}
 }

@@ -42,6 +42,7 @@
 		F78C7E8828BDFD3F0045C9B0 /* FLChapterListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78C7E8628BDFD3F0045C9B0 /* FLChapterListCell.xib */; };
 		F78C7E8C28BF3D880045C9B0 /* FCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8B28BF3D870045C9B0 /* FCFileManager.m */; };
 		F78C7E8F28C0AF380045C9B0 /* FLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8E28C0AF380045C9B0 /* FLUser.m */; };
+		F7B42CF429E2E68600D4D784 /* FLMIneHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B42CF329E2E68600D4D784 /* FLMIneHeaderView.m */; };
 		F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9051328AB82B2003EB981 /* AppDelegate.m */; };
 		F7B9051F28AB82B4003EB981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B9051E28AB82B4003EB981 /* Assets.xcassets */; };
 		F7B9052528AB82B4003EB981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B9052428AB82B4003EB981 /* main.m */; };
@@ -150,6 +151,8 @@
 		F78C7E8D28C0AF380045C9B0 /* FLUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLUser.h; sourceTree = "<group>"; };
 		F78C7E8E28C0AF380045C9B0 /* FLUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLUser.m; sourceTree = "<group>"; };
 		F78C7E9028C1D55C0045C9B0 /* NotificationNameDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationNameDefine.h; sourceTree = "<group>"; };
+		F7B42CF229E2E68600D4D784 /* FLMIneHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMIneHeaderView.h; sourceTree = "<group>"; };
+		F7B42CF329E2E68600D4D784 /* FLMIneHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMIneHeaderView.m; sourceTree = "<group>"; };
 		F7B9050F28AB82B2003EB981 /* BookRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B9051228AB82B2003EB981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7B9051328AB82B2003EB981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -387,6 +390,15 @@
 			path = FCFileManager;
 			sourceTree = "<group>";
 		};
+		F7B42CF129E2E58200D4D784 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7B42CF229E2E68600D4D784 /* FLMIneHeaderView.h */,
+				F7B42CF329E2E68600D4D784 /* FLMIneHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F7B9050628AB82B2003EB981 = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +522,7 @@
 		F7B9055C28AC7677003EB981 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F7B42CF129E2E58200D4D784 /* View */,
 				F70EEE3C29DFB39A00F911C5 /* FLReadHTMLController */,
 				F7B9056C28AC7B09003EB981 /* FLMineController.h */,
 				F7B9056D28AC7B09003EB981 /* FLMineController.m */,
@@ -868,6 +881,7 @@
 				F70EEE5B29E141D200F911C5 /* FLStoreRequest.m in Sources */,
 				F78C7E8F28C0AF380045C9B0 /* FLUser.m in Sources */,
 				F7B9057228AC9215003EB981 /* FLReaderController.m in Sources */,
+				F7B42CF429E2E68600D4D784 /* FLMIneHeaderView.m in Sources */,
 				F78C7E8C28BF3D880045C9B0 /* FCFileManager.m in Sources */,
 				F70EEE4A29DFF7C800F911C5 /* FLStoreTableHeaderView.m in Sources */,
 				F72303A029D97DD100F304BF /* FLBookTapView.m in Sources */,
