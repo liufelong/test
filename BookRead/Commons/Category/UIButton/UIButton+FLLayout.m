@@ -24,10 +24,10 @@
         }
             break;
         case ButtonImgTop: {
-           
-            self.imageEdgeInsets = UIEdgeInsetsMake(-CGRectGetHeight(imageRect)/2, CGRectGetWidth(titleRect)/2.0, CGRectGetHeight(imageRect)/2, -CGRectGetWidth(titleRect)/2.0);
-            self.titleEdgeInsets = UIEdgeInsetsMake(CGRectGetHeight(titleRect)/2, -CGRectGetWidth(imageRect), -CGRectGetHeight(titleRect)/2, 0);
-
+            self.titleEdgeInsets = UIEdgeInsetsMake(0,-CGRectGetWidth(imageRect),-CGRectGetHeight(imageRect),0);
+            self.imageEdgeInsets = UIEdgeInsetsMake(-self.titleLabel.intrinsicContentSize.height, 0, 0, -self.titleLabel.intrinsicContentSize.width);
+//            self.imageEdgeInsets = UIEdgeInsetsMake(-CGRectGetHeight(imageRect)/2, CGRectGetWidth(titleRect)/2.0, CGRectGetHeight(imageRect)/2, -CGRectGetWidth(titleRect)/2.0);
+//            self.titleEdgeInsets = UIEdgeInsetsMake(CGRectGetHeight(titleRect)/2, -CGRectGetWidth(imageRect), -CGRectGetHeight(titleRect)/2, 0);
         }
             
             break;

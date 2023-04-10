@@ -193,11 +193,7 @@
         NSString *leftImage = self.images[leftIndex];
         NSString *middleImage = self.images[curIndex];
         NSString *rightImage = self.images[rightIndex];
-        
-        // image URL
-        NSURL *leftURL = [NSURL URLWithString:leftImage];
-        NSURL *middleURL = [NSURL URLWithString:middleImage];
-        NSURL *rightURL = [NSURL URLWithString:rightImage];
+
         
         if (_localImgState) {
             self.leftImageView.image = [UIImage imageNamed:leftImage];
