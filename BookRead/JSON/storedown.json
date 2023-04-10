@@ -875,27 +875,27 @@
         "bookclass":[
             {
                 "title":"分类",
-                "iconimage":"",
+                "iconimage":"menu_category",
                 "classcode":"1",
             },
             {
                 "title":"榜单",
-                "iconimage":"",
+                "iconimage":"menu_rank",
                 "classcode":"2",
             },
             {
                 "title":"会员",
-                "iconimage":"",
+                "iconimage":"menu_vip",
                 "classcode":"3",
             },
             {
                 "title":"完结",
-                "iconimage":"",
+                "iconimage":"menu_complete",
                 "classcode":"4",
             },
             {
                 "title":"出版",
-                "iconimage":"",
+                "iconimage":"menu_publish",
                 "classcode":"5",
             },
         ],

@@ -11,6 +11,7 @@
 #import "FLStoreTableHeaderView.h"
 #import "FLCollectionTableCell.h"
 #import "FLBookTableCell.h"
+#import "FLBookMenuView.h"
 
 #import "FLStoreDataModel.h"
 #import "FLStoreRequest.h"
@@ -19,13 +20,18 @@
 
 /*!<#备注#>*/
 @property (strong, nonatomic) UITableView *tableView;
-/*!<#备注#>*/
+/*!table数据源*/
 @property (strong, nonatomic) NSMutableArray *dataArr;
-/*!<#备注#>*/
+/*!banner图数据源*/
 @property (strong, nonatomic) NSMutableArray *bannerDataArr;
+/*!分类数据源*/
+@property (strong, nonatomic) NSMutableArray *classDataArr;
 
 /*!<#备注#>*/
 @property (strong, nonatomic) FLBannerView *bannerView;
+
+/*!<#备注#>*/
+@property (strong, nonatomic) UIView *headerView;
 
 
 @end
@@ -54,13 +60,32 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.equalTo(self.view);
     }];
-    self.bannerView = [[FLBannerView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 0.618) scrollDuration:5];
+    
+    CGFloat height = SCREEN_WIDTH * 0.618;
+    self.headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, height)];
+    self.bannerView = [[FLBannerView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, height) scrollDuration:5];
+    [self.headerView addSubview:self.bannerView];
+    
     WS(weakSelf);
     [self.bannerView setBannerDidClicked:^(NSInteger index) {
         [weakSelf bannerClickWithIndex:index];
     }];
 
-    self.tableView.tableHeaderView = self.bannerView;
+    self.tableView.tableHeaderView = self.headerView;
+}
+
+//创建分类视图
+- (void)createClassView {
+    if (self.classDataArr.count == 0) {
+        return;
+    }
+    
+    CGFloat height = SCREEN_WIDTH * 0.618 ;
+    FLBookMenuView *menuView = [[FLBookMenuView alloc] initWithDataArr:self.classDataArr];
+    menuView.frame = CGRectMake(0, height, SCREEN_WIDTH, 80);
+    self.headerView.frame = CGRectMake(0, 0, SCREEN_WIDTH, height + 80);
+    [self.headerView addSubview:menuView];
+    
 }
 
 - (void)bannerViewShowImage {
@@ -77,6 +102,9 @@
     WS(weakSelf);
     [FLStoreRequest requestStoreInfoWithBody:@{} andSuccess:^(id  _Nonnull result) {
         weakSelf.bannerDataArr = result[@"banner"];
+        
+        weakSelf.classDataArr = result[@"bookclass"];
+        
         NSMutableArray *menulist = result[@"menulist"];
         
         for (NSDictionary *dict in menulist) {
@@ -90,9 +118,11 @@
         
         [weakSelf bannerViewShowImage];
         
+        [weakSelf createClassView];
+        
         [weakSelf.tableView reloadData];
     } andFailure:^(NSString * _Nonnull errorType) {
-        
+        [FLAlertTool alertWithTitle:@"提示" message:errorType];
     }];
     
 }

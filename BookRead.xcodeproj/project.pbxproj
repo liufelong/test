@@ -24,6 +24,8 @@
 		F70EEE6229E1615800F911C5 /* FLBookShelfCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70EEE6029E1615800F911C5 /* FLBookShelfCollectionCell.xib */; };
 		F70EEE6629E1623500F911C5 /* FLBookCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE6429E1623500F911C5 /* FLBookCollectionCell.m */; };
 		F70EEE6729E1623500F911C5 /* FLBookCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70EEE6529E1623500F911C5 /* FLBookCollectionCell.xib */; };
+		F70EEE6D29E3B20900F911C5 /* FLBookMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */; };
+		F70EEE7129E3B5F700F911C5 /* UIButton+FLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -118,6 +120,10 @@
 		F70EEE6329E1623500F911C5 /* FLBookCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell.h; sourceTree = "<group>"; };
 		F70EEE6429E1623500F911C5 /* FLBookCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell.m; sourceTree = "<group>"; };
 		F70EEE6529E1623500F911C5 /* FLBookCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell.xib; sourceTree = "<group>"; };
+		F70EEE6B29E3B20800F911C5 /* FLBookMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookMenuView.h; sourceTree = "<group>"; };
+		F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookMenuView.m; sourceTree = "<group>"; };
+		F70EEE6F29E3B5F700F911C5 /* UIButton+FLLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FLLayout.h"; sourceTree = "<group>"; };
+		F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FLLayout.m"; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -282,6 +288,8 @@
 				F70EEE5329E0123500F911C5 /* FLCollectionTableCell.h */,
 				F70EEE5429E0123500F911C5 /* FLCollectionTableCell.m */,
 				F70EEE5529E0123500F911C5 /* FLCollectionTableCell.xib */,
+				F70EEE6B29E3B20800F911C5 /* FLBookMenuView.h */,
+				F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +329,15 @@
 				F7B9056728AC7AC9003EB981 /* FLBookShelfController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F70EEE6E29E3B58900F911C5 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				F70EEE6F29E3B5F700F911C5 /* UIButton+FLLayout.h */,
+				F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F747CFC829C8432700CF46D0 /* TempHome */ = {
@@ -505,6 +522,7 @@
 		F7B9055128AB9A88003EB981 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F70EEE6E29E3B58900F911C5 /* UIButton */,
 				F7B9055228AB9A9F003EB981 /* UIImage */,
 			);
 			path = Category;
@@ -889,6 +907,8 @@
 				F70EEE4029DFB3C200F911C5 /* FLReadHTMLController.m in Sources */,
 				F70EEE5629E0123500F911C5 /* FLCollectionTableCell.m in Sources */,
 				F7B9056E28AC7B09003EB981 /* FLMineController.m in Sources */,
+				F70EEE6D29E3B20900F911C5 /* FLBookMenuView.m in Sources */,
+				F70EEE7129E3B5F700F911C5 /* UIButton+FLLayout.m in Sources */,
 				F70EEE4429DFDE4500F911C5 /* FLStoreListController.m in Sources */,
 				F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */,
 				F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */,
