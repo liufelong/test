@@ -26,6 +26,8 @@
 		F70EEE6729E1623500F911C5 /* FLBookCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70EEE6529E1623500F911C5 /* FLBookCollectionCell.xib */; };
 		F70EEE6D29E3B20900F911C5 /* FLBookMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */; };
 		F70EEE7129E3B5F700F911C5 /* UIButton+FLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */; };
+		F70EEE7429E5539300F911C5 /* FLBookDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7329E5539300F911C5 /* FLBookDetailController.m */; };
+		F70EEE7729E5575E00F911C5 /* FLDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -124,6 +126,10 @@
 		F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookMenuView.m; sourceTree = "<group>"; };
 		F70EEE6F29E3B5F700F911C5 /* UIButton+FLLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FLLayout.h"; sourceTree = "<group>"; };
 		F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FLLayout.m"; sourceTree = "<group>"; };
+		F70EEE7229E5539300F911C5 /* FLBookDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookDetailController.h; sourceTree = "<group>"; };
+		F70EEE7329E5539300F911C5 /* FLBookDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookDetailController.m; sourceTree = "<group>"; };
+		F70EEE7529E5575E00F911C5 /* FLDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLDetailHeaderView.h; sourceTree = "<group>"; };
+		F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLDetailHeaderView.m; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -276,6 +282,8 @@
 				F7B905AD28B75CE1003EB981 /* FLBookStoreController.m */,
 				F70EEE4229DFDE4500F911C5 /* FLStoreListController.h */,
 				F70EEE4329DFDE4500F911C5 /* FLStoreListController.m */,
+				F70EEE7229E5539300F911C5 /* FLBookDetailController.h */,
+				F70EEE7329E5539300F911C5 /* FLBookDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +298,8 @@
 				F70EEE5529E0123500F911C5 /* FLCollectionTableCell.xib */,
 				F70EEE6B29E3B20800F911C5 /* FLBookMenuView.h */,
 				F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */,
+				F70EEE7529E5575E00F911C5 /* FLDetailHeaderView.h */,
+				F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -916,6 +926,7 @@
 				F70EEE6629E1623500F911C5 /* FLBookCollectionCell.m in Sources */,
 				F78C7E8728BDFD3F0045C9B0 /* FLChapterListCell.m in Sources */,
 				F7B9052528AB82B4003EB981 /* main.m in Sources */,
+				F70EEE7429E5539300F911C5 /* FLBookDetailController.m in Sources */,
 				F747CFD329C8468400CF46D0 /* PagingTextView.m in Sources */,
 				F7B9056128AC778B003EB981 /* FLBookModel.m in Sources */,
 				F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */,
@@ -924,6 +935,7 @@
 				F7B9056828AC7AC9003EB981 /* FLBookShelfController.m in Sources */,
 				F7B9055828AB9B89003EB981 /* UIImage+Extenion.m in Sources */,
 				F73D470729D960B900E20CC1 /* FLBannerView.m in Sources */,
+				F70EEE7729E5575E00F911C5 /* FLDetailHeaderView.m in Sources */,
 				F7B905A728B38131003EB981 /* RequestTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
