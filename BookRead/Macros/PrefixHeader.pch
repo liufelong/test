@@ -21,6 +21,8 @@
 
 #import "FLUser.h"
 #import "FLBookModel.h"
+#import <UIImageView+WebCache.h>
+#import "NSString+FLString.h"
 
 #import "NotificationNameDefine.h"
 

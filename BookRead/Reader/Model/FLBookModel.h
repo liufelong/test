@@ -28,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *introduction;
 /*!推荐人数*/
 @property (copy, nonatomic) NSString *advicecount;
+/*!评分*/
+@property (copy, nonatomic) NSString *score;
+/*!总字数*/
+@property (copy, nonatomic) NSString *wordnumber;
 
 @property (copy, nonatomic) NSString *chapterUrl;
 /*!章节列表*/

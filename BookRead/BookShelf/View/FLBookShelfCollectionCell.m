@@ -6,7 +6,6 @@
 //
 
 #import "FLBookShelfCollectionCell.h"
-#import <UIImageView+WebCache.h>
 
 @implementation FLBookShelfCollectionCell
 

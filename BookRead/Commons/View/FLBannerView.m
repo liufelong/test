@@ -6,7 +6,6 @@
 //
 
 #import "FLBannerView.h"
-#import <UIImageView+WebCache.h>
 
 @interface FLBannerView () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 

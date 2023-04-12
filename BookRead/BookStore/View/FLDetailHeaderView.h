@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FLDetailHeaderView : UIView
 
+@property (strong, nonatomic) FLBookModel *model;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -28,6 +28,7 @@
 		F70EEE7129E3B5F700F911C5 /* UIButton+FLLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */; };
 		F70EEE7429E5539300F911C5 /* FLBookDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7329E5539300F911C5 /* FLBookDetailController.m */; };
 		F70EEE7729E5575E00F911C5 /* FLDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */; };
+		F70EEE7B29E68A4500F911C5 /* NSString+FLString.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EEE7A29E68A4500F911C5 /* NSString+FLString.m */; };
 		F723039729D969EC00F304BF /* FLBookCollectionCell_rf.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */; };
 		F723039829D969EC00F304BF /* FLBookCollectionCell_rf.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */; };
 		F723039C29D970DB00F304BF /* FLBookTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723039A29D970DB00F304BF /* FLBookTableCell.m */; };
@@ -68,6 +69,7 @@
 		F7B905B228B76455003EB981 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B905B128B76449003EB981 /* libxml2.2.tbd */; };
 		F7D17BEC28F29922006519DE /* FLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D17BEB28F29922006519DE /* FLMenuView.m */; };
 		F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D17BED28F3AF77006519DE /* FLMenuView.xib */; };
+		F7D4D78529E6CDAB00ECBE42 /* bookdetail.json in Resources */ = {isa = PBXBuildFile; fileRef = F7D4D78429E6CDAB00ECBE42 /* bookdetail.json */; };
 		FD226D3CEC634F652667E599 /* Pods_BookRead_BookReadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED45B9A9070BC25002342E /* Pods_BookRead_BookReadUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,8 @@
 		F70EEE7329E5539300F911C5 /* FLBookDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookDetailController.m; sourceTree = "<group>"; };
 		F70EEE7529E5575E00F911C5 /* FLDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLDetailHeaderView.h; sourceTree = "<group>"; };
 		F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLDetailHeaderView.m; sourceTree = "<group>"; };
+		F70EEE7929E68A4500F911C5 /* NSString+FLString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FLString.h"; sourceTree = "<group>"; };
+		F70EEE7A29E68A4500F911C5 /* NSString+FLString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLString.m"; sourceTree = "<group>"; };
 		F723039429D969EC00F304BF /* FLBookCollectionCell_rf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBookCollectionCell_rf.h; sourceTree = "<group>"; };
 		F723039529D969EC00F304BF /* FLBookCollectionCell_rf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBookCollectionCell_rf.m; sourceTree = "<group>"; };
 		F723039629D969EC00F304BF /* FLBookCollectionCell_rf.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLBookCollectionCell_rf.xib; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		F7D17BEA28F29922006519DE /* FLMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLMenuView.h; sourceTree = "<group>"; };
 		F7D17BEB28F29922006519DE /* FLMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMenuView.m; sourceTree = "<group>"; };
 		F7D17BED28F3AF77006519DE /* FLMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLMenuView.xib; sourceTree = "<group>"; };
+		F7D4D78429E6CDAB00ECBE42 /* bookdetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bookdetail.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +353,15 @@
 				F70EEE7029E3B5F700F911C5 /* UIButton+FLLayout.m */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F70EEE7829E68A1900F911C5 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F70EEE7929E68A4500F911C5 /* NSString+FLString.h */,
+				F70EEE7A29E68A4500F911C5 /* NSString+FLString.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		F747CFC829C8432700CF46D0 /* TempHome */ = {
@@ -532,6 +546,7 @@
 		F7B9055128AB9A88003EB981 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F70EEE7829E68A1900F911C5 /* NSString */,
 				F70EEE6E29E3B58900F911C5 /* UIButton */,
 				F7B9055228AB9A9F003EB981 /* UIImage */,
 			);
@@ -640,6 +655,7 @@
 		F7DDC23E29DC00E70059581F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				F7D4D78429E6CDAB00ECBE42 /* bookdetail.json */,
 				F70C70D829DE97BE007D1717 /* storedown.json */,
 				F70C70D629DE960D007D1717 /* storeup.json */,
 			);
@@ -759,6 +775,7 @@
 				F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */,
 				F7D17BEE28F3AF77006519DE /* FLMenuView.xib in Resources */,
 				F70C70D729DE960D007D1717 /* storeup.json in Resources */,
+				F7D4D78529E6CDAB00ECBE42 /* bookdetail.json in Resources */,
 				F7B9051F28AB82B4003EB981 /* Assets.xcassets in Resources */,
 				F70EEE6729E1623500F911C5 /* FLBookCollectionCell.xib in Resources */,
 				F7B905A928B6235F003EB981 /* 小说.txt in Resources */,
@@ -923,6 +940,7 @@
 				F7B9051428AB82B2003EB981 /* AppDelegate.m in Sources */,
 				F7B9055B28AC7374003EB981 /* FLTabBarController.m in Sources */,
 				F7B9054B28AB96A2003EB981 /* BaseViewController.m in Sources */,
+				F70EEE7B29E68A4500F911C5 /* NSString+FLString.m in Sources */,
 				F70EEE6629E1623500F911C5 /* FLBookCollectionCell.m in Sources */,
 				F78C7E8728BDFD3F0045C9B0 /* FLChapterListCell.m in Sources */,
 				F7B9052528AB82B4003EB981 /* main.m in Sources */,

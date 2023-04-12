@@ -6,7 +6,6 @@
 //
 
 #import "FLBookTableCell.h"
-#import <UIImageView+WebCache.h>
 #import "FLBookTapView.h"
 
 @interface FLBookTableCell ()

@@ -15,7 +15,7 @@
 @property (strong, nonatomic) UILabel *wordcount;
 
 /*!<#备注#>*/
-@property (strong, nonatomic) UIView *starView;
+@property (strong, nonatomic) UILabel *scoreLabel;
 
 @end
 
@@ -58,8 +58,27 @@
         make.left.equalTo(self.coverimg.mas_right).offset(10);
     }];
     
-    self.starView = [[UIView alloc] init];
+    self.scoreLabel = [[UILabel alloc] init];
+    self.scoreLabel.font = CustomFont(14);
+    self.scoreLabel.textColor = CX_COLOR_333;
+    [self addSubview:self.scoreLabel];
+    [self.scoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.coverimg.mas_right).offset(10);
+        make.bottom.equalTo(self.coverimg);
+        make.height.mas_equalTo(20);
+    }];
     
+}
+
+- (void)setModel:(FLBookModel *)model {
+    _model = model;
+    
+    [self.coverimg sd_setImageWithURL:[NSURL URLWithString:model.coverimg]];
+    self.bookName.text = model.bookname;
+    self.wordcount.text = model.wordnumber;
+    
+    NSString *score = [model.score getSignificantFigures];
+    self.scoreLabel.text = [NSString stringWithFormat:@"评分:%@分",score];
     
 }
 
