@@ -40,6 +40,7 @@
 		F747CFD329C8468400CF46D0 /* PagingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFCF29C8468400CF46D0 /* PagingTextView.m */; };
 		F747CFD629C846B700CF46D0 /* FLReadControllerT.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFD529C846B700CF46D0 /* FLReadControllerT.m */; };
 		F747CFD929C84C3B00CF46D0 /* FLReadDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F747CFD829C84C3B00CF46D0 /* FLReadDetailController.m */; };
+		F777429A29E7CA9100A55FBA /* FLDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F777429929E7CA9100A55FBA /* FLDetailHeaderView.xib */; };
 		F78C7E7C28BDDBE90045C9B0 /* FLAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E7B28BDDBE90045C9B0 /* FLAlertTool.m */; };
 		F78C7E8228BDEE730045C9B0 /* FLChaperListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78C7E8028BDEE730045C9B0 /* FLChaperListController.m */; };
 		F78C7E8328BDEE730045C9B0 /* FLChaperListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78C7E8128BDEE730045C9B0 /* FLChaperListController.xib */; };
@@ -154,6 +155,7 @@
 		F747CFD529C846B700CF46D0 /* FLReadControllerT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadControllerT.m; sourceTree = "<group>"; };
 		F747CFD729C84C3B00CF46D0 /* FLReadDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLReadDetailController.h; sourceTree = "<group>"; };
 		F747CFD829C84C3B00CF46D0 /* FLReadDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLReadDetailController.m; sourceTree = "<group>"; };
+		F777429929E7CA9100A55FBA /* FLDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FLDetailHeaderView.xib; sourceTree = "<group>"; };
 		F78C7E7A28BDDBE90045C9B0 /* FLAlertTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAlertTool.h; sourceTree = "<group>"; };
 		F78C7E7B28BDDBE90045C9B0 /* FLAlertTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAlertTool.m; sourceTree = "<group>"; };
 		F78C7E7F28BDEE730045C9B0 /* FLChaperListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLChaperListController.h; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				F70EEE6C29E3B20800F911C5 /* FLBookMenuView.m */,
 				F70EEE7529E5575E00F911C5 /* FLDetailHeaderView.h */,
 				F70EEE7629E5575E00F911C5 /* FLDetailHeaderView.m */,
+				F777429929E7CA9100A55FBA /* FLDetailHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -770,6 +773,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F777429A29E7CA9100A55FBA /* FLDetailHeaderView.xib in Resources */,
 				F723039D29D970DB00F304BF /* FLBookTableCell.xib in Resources */,
 				F78C7E8828BDFD3F0045C9B0 /* FLChapterListCell.xib in Resources */,
 				F7B9059428ADD424003EB981 /* LaunchScreen.storyboard in Resources */,
