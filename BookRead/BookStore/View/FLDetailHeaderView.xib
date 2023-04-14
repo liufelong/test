@@ -49,12 +49,27 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-9K-3H8">
+                    <rect key="frame" x="130" y="121" width="179" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="包月会员，万本小说免费读&gt;">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                        <color key="baseForegroundColor" red="1" green="0.68627450980000004" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="read_icon_vip" translatesAutoresizingMaskIntoConstraints="NO" id="2P0-fx-bwi">
+                    <rect key="frame" x="102" y="118" width="24" height="24"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="2P0-fx-bwi" firstAttribute="bottom" secondItem="Soc-vb-1sv" secondAttribute="bottom" id="Tid-Gp-xBB"/>
                 <constraint firstItem="l20-ws-k5R" firstAttribute="top" secondItem="2Ja-q8-U8w" secondAttribute="bottom" constant="15" id="Tv5-XC-ndy"/>
                 <constraint firstItem="2Ja-q8-U8w" firstAttribute="leading" secondItem="Soc-vb-1sv" secondAttribute="trailing" constant="10" id="Weg-z8-DKO"/>
+                <constraint firstItem="2P0-fx-bwi" firstAttribute="leading" secondItem="Soc-vb-1sv" secondAttribute="trailing" constant="10" id="cFf-uz-fmM"/>
                 <constraint firstItem="Soc-vb-1sv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="dLd-8W-zKe"/>
                 <constraint firstItem="l20-ws-k5R" firstAttribute="leading" secondItem="Soc-vb-1sv" secondAttribute="trailing" constant="10" id="gdT-HR-jw2"/>
                 <constraint firstItem="2Ja-q8-U8w" firstAttribute="top" secondItem="HY8-t5-MLv" secondAttribute="bottom" constant="15" id="nEt-Ox-6dt"/>
@@ -67,6 +82,7 @@
         </view>
     </objects>
     <resources>
+        <image name="read_icon_vip" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
