@@ -17,6 +17,38 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nonnull NSString *)getSignificantFigures;
 
+#pragma mark - 字符串宽高类计算
+
+/*!
+ @brief 计算字符串高度(UILabel)
+ */
+- (CGFloat)compressedSizeInLabelWithWidth:(float)theWidth fontSize:(CGFloat)font;
+- (CGFloat)compressedSizeInLabelWithWidth:(float)theWidth font:(UIFont*)font;
+
+/*!
+ @brief 计算字符串高度(UITextView)
+ */
+- (CGFloat)compressedSizeInTextViewWithWidth:(float)theWidth fontSize:(CGFloat)font;
+
+/*!
+ @brief 计算字符串宽度
+ */
+- (CGFloat)getStringWidthWithFontSize:(CGFloat)fontSize;
+- (CGFloat)getStringWidthWithFont:(UIFont*)font;
+/**
+ 计算字符串高度
+ 
+ @param width 宽度
+ @param fontsize 字号
+ @return 字符串高度
+ */
+- (CGFloat)getStringHeightWithWidth:(CGFloat)width fontSize:(CGFloat)fontsize;
+
+/*!
+ @brief    计算字符串长度
+ */
+- (int)calculateLength;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,6 +6,8 @@
 //
 
 #import "FLBookStoreController.h"
+#import "FLBookDetailController.h"
+
 #import "FLSegmentedBar.h"
 
 #import "FLStoreListController.h"
@@ -34,8 +36,9 @@
     
     self.containerArr = @[].mutableCopy;
     
-//    self.hight = CGRectGetHeight(self.view.frame) - TAB_BAR_Safe_HEIGHT;
-    self.hight = SCREEN_HEIGHT - 176;
+//    self.hight = SCREEN_HEIGHT - 176;
+
+    self.hight = SCREEN_HEIGHT - STATUS_AND_NAVIGATION_HEIGHT - TAB_BAR_Safe_HEIGHT;
     
     [self setupSubviews];
     
@@ -98,11 +101,18 @@
 - (UIViewController *)scrollContainerViewControllerAtIndex:(NSInteger)index {
     FLStoreListController *list = [[FLStoreListController alloc] init];
     list.type = self.classcodes[index];
-//    WS(weakSelf)
+    WS(weakSelf)
     list.selectBook = ^(FLBookModel * _Nonnull book) {
-        
+        [weakSelf jumbToDetailController:book];
     };
     return list;
+}
+
+- (void)jumbToDetailController:(FLBookModel *)bookmodel {
+    FLBookDetailController *detailVC = [[FLBookDetailController alloc] init];
+    detailVC.model = bookmodel;
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate

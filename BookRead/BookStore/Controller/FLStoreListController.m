@@ -128,7 +128,9 @@
 }
 
 - (void)tableSelectBook:(FLBookModel *)bookmodel {
-    
+    if (self.selectBook) {
+        self.selectBook(bookmodel);
+    }
 }
 
 - (void)bannerClickWithIndex:(NSInteger)index {

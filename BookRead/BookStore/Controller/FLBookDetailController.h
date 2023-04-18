@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FLBookDetailController : BaseViewController
 
+@property (strong, nonatomic) FLBookModel *model;
+
 @end
 
 NS_ASSUME_NONNULL_END

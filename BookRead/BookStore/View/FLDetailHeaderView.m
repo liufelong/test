@@ -9,77 +9,42 @@
 
 @interface FLDetailHeaderView ()
 
-@property (strong, nonatomic) UIImageView *coverimg;
-@property (strong, nonatomic) UILabel *bookName;
-@property (strong, nonatomic) UILabel *preface;
-@property (strong, nonatomic) UILabel *wordcount;
+@property (weak, nonatomic) IBOutlet UIImageView *coverimg;
 
-/*!<#备注#>*/
-@property (strong, nonatomic) UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *authornameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *wordcountLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *introductionLabel;
+
 
 @end
 
 @implementation FLDetailHeaderView
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self createUI];
-    }
-    return self;
-}
-
-- (void)createUI {
-    
-    self.coverimg = [[UIImageView alloc] init];
-    [self addSubview:self.coverimg];
-    [self.coverimg mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.mas_equalTo(12);
-        make.width.mas_equalTo(80);
-        make.height.mas_equalTo(130);
-    }];
-    
-    self.bookName = [[UILabel alloc] init];
-    self.bookName.font = CustomFont(14);
-    self.bookName.textColor = CX_COLOR_333;
-    [self addSubview:self.bookName];
-    [self.bookName mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.coverimg);
-        make.left.equalTo(self.coverimg.mas_right).offset(10);
-        make.right.equalTo(self).offset(-10);
-    }];
-    
-    self.wordcount = [[UILabel alloc] init];
-    self.wordcount.font = CustomFont(13);
-    self.wordcount.textColor = CX_COLOR_666;
-    [self addSubview:self.wordcount];
-    [self.wordcount mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.coverimg);
-        make.left.equalTo(self.coverimg.mas_right).offset(10);
-    }];
-    
-    self.scoreLabel = [[UILabel alloc] init];
-    self.scoreLabel.font = CustomFont(14);
-    self.scoreLabel.textColor = CX_COLOR_333;
-    [self addSubview:self.scoreLabel];
-    [self.scoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.coverimg.mas_right).offset(10);
-        make.bottom.equalTo(self.coverimg);
-        make.height.mas_equalTo(20);
-    }];
-    
++ (instancetype)detailHeaderView {
+    FLDetailHeaderView *header = [[NSBundle mainBundle] loadNibNamed:@"FLDetailHeaderView" owner:nil options:nil][0];
+    return header;
 }
 
 - (void)setModel:(FLBookModel *)model {
     _model = model;
     
     [self.coverimg sd_setImageWithURL:[NSURL URLWithString:model.coverimg]];
-    self.bookName.text = model.bookname;
-    self.wordcount.text = model.wordnumber;
+    self.authornameLabel.text = MAKESURE(model.authorname);
+    self.wordcountLabel.text = MAKESURE(model.wordnumber);
     
     NSString *score = [model.score getSignificantFigures];
     self.scoreLabel.text = [NSString stringWithFormat:@"评分:%@分",score];
     
+    self.introductionLabel.text = model.introduction;
+    
+}
+- (IBAction)detailAction:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (self.heightBlock) {
+        self.heightBlock(sender.selected);
+    }
 }
 
 @end

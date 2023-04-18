@@ -13,6 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) FLBookModel *model;
 
+/*!<#备注#>*/
+@property (copy, nonatomic) void(^heightBlock)(BOOL value);
+
++ (instancetype)detailHeaderView;
+
 @end
 
 NS_ASSUME_NONNULL_END
