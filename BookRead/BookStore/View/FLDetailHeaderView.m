@@ -17,6 +17,9 @@
 @property (strong, nonatomic) UILabel *scoreLabel;
 @property (strong, nonatomic) UILabel *introductionLabel;
 
+/*!<#备注#>*/
+@property (strong, nonatomic) UIImageView *statImg;
+
 @end
 
 @implementation FLDetailHeaderView
@@ -38,6 +41,9 @@
         make.height.mas_equalTo(130);
         make.width.mas_equalTo(90);
     }];
+    
+    [self.coverimg setContentHuggingPriority:249 forAxis:UILayoutConstraintAxisVertical];
+    [self.coverimg setContentCompressionResistancePriority:749 forAxis:UILayoutConstraintAxisVertical];
     
     self.authornameLabel = [self createLabel];
     [self.authornameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,28 +89,36 @@
         make.left.equalTo(self.coverimg.mas_right).offset(20);
         make.centerY.equalTo(iconImg);
     }];
-    
+/*
     self.introductionLabel = [self createLabel];
     self.introductionLabel.numberOfLines = 0;
     self.introductionLabel.textColor = CX_COLOR_666;
     [self.introductionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.coverimg.mas_bottom).offset(15);
         make.left.mas_equalTo(12);
-        make.height.mas_equalTo(40);
         make.right.mas_equalTo(-40);
+        make.bottom.equalTo(self).offset(-10);
+    }];
+    
+    self.statImg = [[UIImageView alloc] init];
+    self.statImg.image = [UIImage imageNamed:@"detail_down"];
+    [self addSubview:self.statImg];
+    [self.statImg mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.introductionLabel);
+        make.left.equalTo(self.introductionLabel.mas_right).offset(5);
+        make.width.mas_equalTo(18);
+        make.height.mas_equalTo(15);
     }];
     
     UIButton *detailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [detailBtn addTarget:self action:@selector(detailAction:) forControlEvents:UIControlEventTouchUpInside];
-    [detailBtn setImage:[UIImage imageNamed:@"detail_up"] forState:UIControlStateSelected];
-    [detailBtn setImage:[UIImage imageNamed:@"detail_down"] forState:UIControlStateNormal];
     [self addSubview:detailBtn];
     [detailBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(40);
-        make.right.equalTo(self);
-        make.centerY.equalTo(self.introductionLabel.mas_bottom);
-//        make.bottom.equalTo(self).offset(10);
+        make.left.right.equalTo(self);
+        make.top.bottom.equalTo(self.introductionLabel);
+
     }];
+ */
 }
 
 - (UILabel *)createLabel {
@@ -124,24 +138,35 @@
     NSString *score = [model.score getSignificantFigures];
     self.scoreLabel.text = [NSString stringWithFormat:@"评分:%@分",score];
     
-    self.introductionLabel.text = model.introduction;
+//    self.introductionLabel.text = model.introduction;
     
 }
 - (void)detailAction:(UIButton *)sender {
     sender.selected = !sender.selected;
+    
     CGFloat height = 40;
     if (sender.selected) {
-        height = [self.model.introduction compressedSizeInLabelWithWidth:SCREEN_WIDTH - 60 fontSize:14];
-        if (height < 40) {
-            height = 40;
+        self.statImg.image = [UIImage imageNamed:@"detail_up"];
+        if (sender.selected) {
+            height = [self.model.introduction compressedSizeInLabelWithWidth:SCREEN_WIDTH - 60 fontSize:14];
+            if (height < 40) {
+                height = 40;
+            }
         }
+    }else {
+        self.statImg.image = [UIImage imageNamed:@"detail_down"];
     }
-    [self.introductionLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+    
+    if (self.heightBlock) {
+        self.heightBlock(height);
+    }
+    
+    height = 130 + 37 + height;
+    
+    [self mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(height);
     }];
-    if (self.heightBlock) {
-        self.heightBlock(sender.selected);
-    }
+    
 }
 
 @end

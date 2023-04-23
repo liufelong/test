@@ -13,7 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) UILabel *titleLabel;
 
+@property (copy, nonatomic) void(^heightBlock)(BOOL state);
+
 + (instancetype)groupHeaderWithTableView:(UITableView *)tableView;
+
++ (instancetype)groupDetailHeaderWithTableView:(UITableView *)tableView;
 
 @end
 

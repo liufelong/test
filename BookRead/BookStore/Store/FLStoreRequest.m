@@ -26,4 +26,19 @@
     }];
 }
 
++ (void)requestBookDetailWithBody:(NSDictionary *)body
+                       andSuccess:(void (^)(id result))success
+                       andFailure:(void(^)(NSString *errorType))failure {
+    NSString *url = @"bookdetail";
+    
+    [FLRequest requsetPostWithUrl:url body:body Success:^(id  _Nonnull result) {
+        NSMutableDictionary *dict = (NSMutableDictionary *)result;
+        NSMutableDictionary *bodyDic = dict[@"body"];
+        success(bodyDic);
+        
+    } andFailure:^(NSString * _Nonnull errorType) {
+        failure(errorType);
+    }];
+}
+
 @end

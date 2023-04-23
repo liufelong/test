@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
                       andSuccess:(void (^)(id result))success
                       andFailure:(void(^)(NSString *errorType))failure;
 
+//请求详情
++ (void)requestBookDetailWithBody:(NSDictionary *)body
+                       andSuccess:(void (^)(id result))success
+                       andFailure:(void(^)(NSString *errorType))failure;
 @end
 
 NS_ASSUME_NONNULL_END
