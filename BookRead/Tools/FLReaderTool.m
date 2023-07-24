@@ -106,6 +106,8 @@ NSString const *contDivId = @"content,content1,BookText";
     NSArray *elements = [hpple searchWithXPathQuery:@"//dd"];
     if (elements.count < 20) {
         elements = [hpple searchWithXPathQuery:@"//li"];
+    }else if (elements.count < 20) {
+        elements = [hpple searchWithXPathQuery:@"//td"];
     }
     
     int chapterNumb = 1;
