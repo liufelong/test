@@ -1112,7 +1112,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8S4EA5BM93;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8S4EA5BM93;
-				GCC_PREFIX_HEADER = /Users/liufeilong/Desktop/readProject/BookRead/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/BookRead/BookRead/Macros/PrefixHeader.pch;
 				INFOPLIST_FILE = BookRead/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1139,7 +1139,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8S4EA5BM93;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8S4EA5BM93;
-				GCC_PREFIX_HEADER = /Users/liufeilong/Desktop/readProject/BookRead/Macros/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/BookRead/BookRead/Macros/PrefixHeader.pch;
 				INFOPLIST_FILE = BookRead/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
